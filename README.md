@@ -174,8 +174,18 @@ Total pipeline runtime: 12--18 minutes
 
 # Repository Structure
 
-NeuroMetric/ ├── Modules/ ├── backend/ ├── frontend/ ├── docs/images/
-└── README.md
+```
+NeuroMetric/
+│
+├── Modules/          # Core processing modules (Module-1, Module-2)
+├── backend/          # Pipeline orchestration, session management, APIs
+├── frontend/         # User interface (Streamlit / Web UI)
+├── docs/
+│   └── images/      # README images, diagrams, and visual assets
+│
+└── README.md        # Project documentation
+```
+
 
 ------------------------------------------------------------------------
 
