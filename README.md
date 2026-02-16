@@ -258,5 +258,46 @@ MIT License
 Guna Shankar S
 Gen Ai Engineer
 
+------------------------------------------------------------------------
+# Citations
+
+## OASIS-3 Dataset
+
+This project uses data from the Open Access Series of Imaging Studies (OASIS-3).
+
+If you use this dataset, please cite:
+
+LaMontagne PJ, Benzinger TLS, Morris JC, Keefe S, Hornbeck R, Xiong C, Grant E, Hassenstab J, Moulder K, Vlassenko AG, Raichle ME, Cruchaga C, Marcus D.  
+OASIS-3: Longitudinal Neuroimaging, Clinical, and Cognitive Dataset for Normal Aging and Alzheimer Disease.  
+medRxiv. 2019.  
+
+Dataset link:  
+https://www.oasis-brains.org/
+
+---
+
+## MedGemma and HAI-DEF Models
+
+This project uses MedGemma from Google Health AI Developer Foundations.
+
+Please cite:
+
+Mahvar F, Liu Y, Golden D, et al.  
+The MedGemma Impact Challenge. Kaggle. 2026.  
+https://kaggle.com/competitions/med-gemma-impact-challenge
+
+---
+
+## ANTs Registration Framework
+
+This project uses ANTs for diffeomorphic registration.
+
+Please cite:
+
+Avants BB, Tustison NJ, Song G.  
+Advanced normalization tools (ANTs).  
+NeuroImage, 2011.  
+
+
 
 
