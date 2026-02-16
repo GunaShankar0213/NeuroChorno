@@ -186,6 +186,7 @@ NeuroMetric/
 └── README.md        # Project documentation
 ```
 
+**Note:  In the above code, only ANTS Syn is integrated, due to the DL registartion can be used transmorph as a Add-on where no open training weights is publically avaliable optimsed.**
 
 ------------------------------------------------------------------------
 
