@@ -87,8 +87,6 @@ Fallback to ANTs SyN if DL fails.
 
 ### Step 6 --- Jacobian Map
 
-![Jacobian Map](docs/images/jacobian_map.png)
-
 Output:
 
 -   Difference Map (.nii.gz)
