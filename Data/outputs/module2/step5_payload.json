@@ -1,0 +1,40 @@
+{
+    "metadata": {
+        "age": 62,
+        "sex": "M",
+        "interval_years": 1.415
+    },
+    "roi_metrics": {
+        "hippocampus": {
+            "annual_percent_change": -1.44,
+            "z_score": -0.299
+        },
+        "entorhinal_cortex": {
+            "annual_percent_change": -5.707,
+            "z_score": -3.923
+        },
+        "temporal_lobe": {
+            "annual_percent_change": -1.545,
+            "z_score": -1.064
+        },
+        "parietal_lobe": {
+            "annual_percent_change": -0.45,
+            "z_score": 0.249
+        },
+        "ventricles": {
+            "annual_percent_change": 0.634,
+            "z_score": -0.866
+        }
+    },
+    "progression": {
+        "class": "Normal Progression",
+        "score": 1,
+        "rationale": [
+            "Entorhinal atrophy Z < -1.5"
+        ]
+    },
+    "context_images": {
+        "jacobian_overlay": "Data\\outputs\\module1\\jacobian_overlay.png",
+        "t1_followup_slice": "Data\\outputs\\module2\\step5_t1_axial_slice.png"
+    }
+}

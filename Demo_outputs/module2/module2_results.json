@@ -1,0 +1,190 @@
+{
+    "metadata": {
+        "age": 62,
+        "sex": "M",
+        "interval_days": 517
+    },
+    "step1": {
+        "runtime_minutes": 0.3648371616999308,
+        "threads": 16,
+        "cortical_atlas": "Data\\outputs\\module2\\step1_atlas_registration\\atlas_cortical_in_subject.nii.gz",
+        "subcortical_atlas": "Data\\outputs\\module2\\step1_atlas_registration\\atlas_subcortical_in_subject.nii.gz",
+        "forward_transforms": [
+            "Data\\outputs\\module2\\step1_atlas_registration\\mni_to_subject_fwd_0.nii.gz",
+            "Data\\outputs\\module2\\step1_atlas_registration\\mni_to_subject_fwd_1.mat"
+        ],
+        "inverse_transforms": [
+            "Data\\outputs\\module2\\step1_atlas_registration\\subject_to_mni_inv_0.mat",
+            "Data\\outputs\\module2\\step1_atlas_registration\\subject_to_mni_inv_1.nii.gz"
+        ]
+    },
+    "step2": {
+        "interval_years": 1.4154688569472964,
+        "roi_metrics": {
+            "hippocampus": {
+                "mean_jacobian": 0.9796238475120695,
+                "percent_change_total": -2.0376152487930455,
+                "percent_change_per_year": -1.4395337903707153,
+                "voxel_count": 7921
+            },
+            "entorhinal_cortex": {
+                "mean_jacobian": 0.9192187512303719,
+                "percent_change_total": -8.07812487696281,
+                "percent_change_per_year": -5.707031163076724,
+                "voxel_count": 7443
+            },
+            "temporal_lobe": {
+                "mean_jacobian": 0.9781315633809999,
+                "percent_change_total": -2.1868436619000065,
+                "percent_change_per_year": -1.5449606334796466,
+                "voxel_count": 117786
+            },
+            "parietal_lobe": {
+                "mean_jacobian": 0.9936239817912115,
+                "percent_change_total": -0.6376018208788525,
+                "percent_change_per_year": -0.45045273709091077,
+                "voxel_count": 58890
+            },
+            "ventricles": {
+                "mean_jacobian": 1.0089708073088572,
+                "percent_change_total": 0.8970807308857243,
+                "percent_change_per_year": 0.6337693171296147,
+                "voxel_count": 14036
+            }
+        }
+    },
+    "step3": {
+        "age": 62,
+        "age_bin": "60-70",
+        "interval_years": 1.4154688569472964,
+        "z_scores": {
+            "hippocampus": {
+                "annual_percent_change": -1.4395337903707153,
+                "normative_mean": -1.2,
+                "normative_std": 0.8,
+                "z_score": -0.29941723796339414
+            },
+            "entorhinal_cortex": {
+                "annual_percent_change": -5.707031163076724,
+                "normative_mean": -1.0,
+                "normative_std": 1.2,
+                "z_score": -3.9225259692306036
+            },
+            "temporal_lobe": {
+                "annual_percent_change": -1.5449606334796466,
+                "normative_mean": -0.8,
+                "normative_std": 0.7,
+                "z_score": -1.0642294763994953
+            },
+            "parietal_lobe": {
+                "annual_percent_change": -0.45045273709091077,
+                "normative_mean": -0.6,
+                "normative_std": 0.6,
+                "z_score": 0.24924543818181535
+            },
+            "ventricles": {
+                "annual_percent_change": 0.6337693171296147,
+                "normative_mean": 1.5,
+                "normative_std": 1.0,
+                "z_score": -0.8662306828703853
+            }
+        }
+    },
+    "step4": {
+        "progression_class": "Normal Progression",
+        "score": 1,
+        "rationale": [
+            "Entorhinal atrophy Z < -1.5"
+        ]
+    },
+    "step5_payload": {
+        "metadata": {
+            "age": 62,
+            "sex": "M",
+            "interval_years": 1.415
+        },
+        "roi_metrics": {
+            "hippocampus": {
+                "annual_percent_change": -1.44,
+                "z_score": -0.299
+            },
+            "entorhinal_cortex": {
+                "annual_percent_change": -5.707,
+                "z_score": -3.923
+            },
+            "temporal_lobe": {
+                "annual_percent_change": -1.545,
+                "z_score": -1.064
+            },
+            "parietal_lobe": {
+                "annual_percent_change": -0.45,
+                "z_score": 0.249
+            },
+            "ventricles": {
+                "annual_percent_change": 0.634,
+                "z_score": -0.866
+            }
+        },
+        "progression": {
+            "class": "Normal Progression",
+            "score": 1,
+            "rationale": [
+                "Entorhinal atrophy Z < -1.5"
+            ]
+        },
+        "context_images": {
+            "jacobian_overlay": "Data\\outputs\\module1\\jacobian_overlay.png",
+            "t1_followup_slice": "Data\\outputs\\module2\\step5_t1_axial_slice.png"
+        }
+    },
+    "step6_reasoning": {
+        "thinking_trace": {
+            "stage1_quantitative": "The patient exhibits significant atrophy primarily in the entorhinal cortex (-5.707%/year, Z = -3.923) and hippocampus (-1.44%/year, Z = -0.299), with some involvement of the temporal lobe (-1.545%/year, Z = -1.064). The parietal lobe shows relatively normal change (-0.45%/year, Z = 0.249), and ventricles demonstrate slight enlargement (+0.634%/year, Z = -0.866). Given the strong negative Z-scores for the entorhinal cortex and hippocampus, coupled with the 'Entorhinal atrophy Z < -1.5' rule triggering a 'Normal Progression' classification with a score of 1, this suggests a slower rate of neurodegeneration compared to what might be expected given the severity of the entorhinal atrophy. This could indicate a less aggressive disease course or a more resilient individual.",
+            "stage2_multimodal": "The visual input confirms the quantitative findings regarding atrophy in the entorhinal cortex and hippocampus. The Jacobian overlay displays \"cool/blue\" hues in these regions, corresponding to the reported negative Z-scores indicating atrophy. There are no apparent visual artifacts that contradict the numerical data presented in the previous analysis. Therefore, the visual evidence supports the quantitative metrics.",
+            "stage3_verification": "The analysis appears to be accurate and consistent with the provided information.\n\n**Finalized Narrative Summary:**\n\nThe patient exhibits significant atrophy primarily in the entorhinal cortex (-5.707%/year, Z = -3.923) and hippocampus (-1.44%/year, Z = -0.299), with some involvement of the temporal lobe (-1.545%/year, Z = -1.064). The parietal lobe shows relatively normal change (-0.45%/year, Z = 0.249), and ventricles demonstrate slight enlargement (+0.634%/year, Z = -0.866). Given the strong negative Z-scores for the entorhinal cortex and hippocampus, coupled with the 'Entorhinal atrophy Z < -1.5' rule triggering a 'Normal Progression' classification with a score of 1, this suggests a slower rate of neurodegeneration compared to what might be expected given the severity of the entorhinal atrophy. This could indicate a less aggressive disease course or a more resilient individual."
+        },
+        "final_output": {
+            "roi_interpretations": {
+                "hippocampus": {
+                    "annual_percent_change": -1.44,
+                    "z_score": -0.299,
+                    "interpretation": "Hippocampal atrophy is present, with a Z-score of -0.299."
+                },
+                "entorhinal_cortex": {
+                    "annual_percent_change": -5.707,
+                    "z_score": -3.923,
+                    "interpretation": "Significant entorhinal cortex atrophy is observed, with a Z-score of -3.923."
+                },
+                "temporal_lobe": {
+                    "annual_percent_change": -1.545,
+                    "z_score": -1.064,
+                    "interpretation": "The temporal lobe shows a rate of atrophy, with a Z-score of -1.064."
+                },
+                "parietal_lobe": {
+                    "annual_percent_change": -0.45,
+                    "z_score": 0.249,
+                    "interpretation": "The parietal lobe shows a minimal rate of atrophy, with a Z-score of 0.249."
+                },
+                "ventricles": {
+                    "annual_percent_change": 0.634,
+                    "z_score": -0.866,
+                    "interpretation": "The ventricles are slightly enlarged, with a Z-score of -0.866."
+                }
+            },
+            "final_narrative": "The patient exhibits significant atrophy primarily in the entorhinal cortex (-5.707%/year, Z = -3.923) and hippocampus (-1.44%/year, Z = -0.299), with some involvement of the temporal lobe (-1.545%/year, Z = -1.064). The parietal lobe shows relatively normal change (-0.45%/year, Z = 0.249), and ventricles demonstrate slight enlargement (+0.634%/year, Z = -0.866). Given the strong negative Z-scores for the entorhinal cortex and hippocampus, coupled with the 'Entorhinal atrophy Z < -1.5' rule triggering a 'Normal Progression' classification with a score of 1, this suggests a slower rate of neurodegeneration compared to what might be expected given the severity of the entorhinal atrophy. This could indicate a less aggressive disease course or a more resilient individual.",
+            "classification": {
+                "class": "Normal Progression",
+                "score": 1,
+                "rationale": [
+                    "Entorhinal atrophy Z < -1.5"
+                ]
+            },
+            "confidence_level": "Low (Visual Mismatch)",
+            "warning_flag": "Visual-Numeric Mismatch",
+            "repair_attempted": false,
+            "fallback_used": false
+        },
+        "confidence_level": "Low (Visual Mismatch)",
+        "warning_flag": "Visual-Numeric Mismatch"
+    }
+}

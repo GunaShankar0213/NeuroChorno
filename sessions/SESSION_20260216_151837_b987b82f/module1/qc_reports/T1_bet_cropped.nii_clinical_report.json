@@ -1,0 +1,15 @@
+{
+  "file": "T1_bet_cropped.nii.gz",
+  "clinical_verdict": "PASS",
+  "metrics": {
+    "volume_cc": 1172.61,
+    "hole_ratio": 0.0,
+    "lateral_offset_mm": 1.48
+  },
+  "flags": [],
+  "reference_benchmarks": {
+    "method": "HD-BET (Isensee et al., 2019)",
+    "expected_dice": "> 0.97",
+    "expected_surface_dist": "< 2.54mm"
+  }
+}

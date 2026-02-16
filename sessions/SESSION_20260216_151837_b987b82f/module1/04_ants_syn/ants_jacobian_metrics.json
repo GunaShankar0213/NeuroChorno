@@ -1,0 +1,12 @@
+{
+    "timestamp": "2026-02-16T09:53:15.670450",
+    "mean_jacobian": 0.9999892711639404,
+    "std_jacobian": 0.08098623156547546,
+    "negative_jacobian_pct": 0.0,
+    "ncc": 0.9685789942741394,
+    "max_displacement_mm": 2.049640323166258,
+    "qa_pass": true,
+    "runtime_minutes": 1.9952108166666667,
+    "transform_type": "ANTs_SyN",
+    "threads": 18
+}

@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "unit": "annual_percent_change",
+    "description": "Healthy aging annual ROI percent change",
+    "source": "Synthetic demonstration dataset (variance-adjusted for statistical realism)"
+  },
+  "age_bins": {
+    "50-60": {
+      "hippocampus": { "mean": -1.0, "std": 0.8 },
+      "entorhinal_cortex": { "mean": -0.8, "std": 1.0 },
+      "temporal_lobe": { "mean": -0.6, "std": 0.7 },
+      "parietal_lobe": { "mean": -0.4, "std": 0.6 },
+      "ventricles": { "mean": 1.2, "std": 1.0 }
+    },
+    "60-70": {
+      "hippocampus": { "mean": -1.2, "std": 0.8 },
+      "entorhinal_cortex": { "mean": -1.0, "std": 1.2 },
+      "temporal_lobe": { "mean": -0.8, "std": 0.7 },
+      "parietal_lobe": { "mean": -0.6, "std": 0.6 },
+      "ventricles": { "mean": 1.5, "std": 1.0 }
+    },
+    "70-80": {
+      "hippocampus": { "mean": -1.5, "std": 0.9 },
+      "entorhinal_cortex": { "mean": -1.3, "std": 1.3 },
+      "temporal_lobe": { "mean": -1.0, "std": 0.8 },
+      "parietal_lobe": { "mean": -0.8, "std": 0.7 },
+      "ventricles": { "mean": 1.8, "std": 1.2 }
+    }
+  }
+}

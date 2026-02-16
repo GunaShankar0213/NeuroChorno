@@ -1,0 +1,1305 @@
+2026-02-13 14:55:26 | INFO     | ========================================
+2026-02-13 14:55:26 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 14:55:26 | INFO     | ========================================
+2026-02-13 14:55:26 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 14:55:26 | INFO     | Loading subject (T0)...
+2026-02-13 14:55:26 | INFO     | Loading MNI template...
+2026-02-13 14:55:26 | ERROR    | Module 2 failed.
+2026-02-13 14:55:26 | ERROR    | File Modules\Module2\atlas\MNI152_T1_1mm.nii.gz does not exist!
+2026-02-13 14:55:26 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 65, in run_module2
+    step1_result = register_atlas_to_subject(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\step1_register_atlas.py", line 45, in register_atlas_to_subject
+    mni = ants.image_read(str(mni_template_path))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\ants\core\ants_image_io.py", line 331, in image_read
+    raise ValueError("File %s does not exist!" % filename)
+ValueError: File Modules\Module2\atlas\MNI152_T1_1mm.nii.gz does not exist!
+
+2026-02-13 14:56:31 | INFO     | ========================================
+2026-02-13 14:56:31 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 14:56:31 | INFO     | ========================================
+2026-02-13 14:56:31 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 14:56:31 | INFO     | Loading subject (T0)...
+2026-02-13 14:56:31 | INFO     | Loading MNI template...
+2026-02-13 14:56:31 | ERROR    | Module 2 failed.
+2026-02-13 14:56:31 | ERROR    | File Modules\Module2\atlas\MNI152_T1_1mm.nii.gz does not exist!
+2026-02-13 14:56:31 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 65, in run_module2
+    step1_result = register_atlas_to_subject(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\step1_register_atlas.py", line 45, in register_atlas_to_subject
+    mni = ants.image_read(str(mni_template_path))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\ants\core\ants_image_io.py", line 331, in image_read
+    raise ValueError("File %s does not exist!" % filename)
+ValueError: File Modules\Module2\atlas\MNI152_T1_1mm.nii.gz does not exist!
+
+2026-02-13 15:05:54 | INFO     | ========================================
+2026-02-13 15:05:54 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 15:05:54 | INFO     | ========================================
+2026-02-13 15:05:54 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 15:05:54 | INFO     | Loading subject (T0)...
+2026-02-13 15:05:54 | INFO     | Loading MNI template...
+2026-02-13 15:05:54 | ERROR    | Module 2 failed.
+2026-02-13 15:05:54 | ERROR    | SyNQuick does not exist
+2026-02-13 15:05:54 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 80, in run_module2
+    step1_result = register_atlas_to_subject(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\step1_register_atlas.py", line 51, in register_atlas_to_subject
+    registration = ants.registration(
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\ants\registration\registration.py", line 426, in registration
+    raise ValueError(f'{type_of_transform} does not exist')
+ValueError: SyNQuick does not exist
+
+2026-02-13 15:10:22 | INFO     | ========================================
+2026-02-13 15:10:22 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 15:10:22 | INFO     | ========================================
+2026-02-13 15:10:22 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 15:10:22 | INFO     | Loading subject (T0)...
+2026-02-13 15:10:22 | INFO     | Loading MNI template...
+2026-02-13 15:10:22 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 15:10:37 | INFO     | Registration completed in 0.26 minutes
+2026-02-13 15:10:37 | INFO     | Saving transforms...
+2026-02-13 15:10:37 | ERROR    | Module 2 failed.
+2026-02-13 15:10:37 | ERROR    | [WinError 2] The system cannot find the file specified: 'C:\\Users\\GUNAS_~1\\AppData\\Local\\Temp\\tmpvrn8kvrq0GenericAffine.mat' -> 'Data\\outputs\\module2\\step1_atlas_registration\\subject_to_mni_inv_0.nii.gz'
+2026-02-13 15:10:37 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 80, in run_module2
+    step1_result = register_atlas_to_subject(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\step1_register_atlas.py", line 78, in register_atlas_to_subject
+    os.replace(tf, dest)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\GUNAS_~1\\AppData\\Local\\Temp\\tmpvrn8kvrq0GenericAffine.mat' -> 'Data\\outputs\\module2\\step1_atlas_registration\\subject_to_mni_inv_0.nii.gz'
+
+2026-02-13 15:13:59 | INFO     | ========================================
+2026-02-13 15:13:59 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 15:13:59 | INFO     | ========================================
+2026-02-13 15:13:59 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 15:13:59 | INFO     | Loading subject (T0)...
+2026-02-13 15:13:59 | INFO     | Loading MNI template...
+2026-02-13 15:13:59 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 15:14:14 | INFO     | Registration completed in 0.24 minutes
+2026-02-13 15:14:14 | INFO     | Saving transforms...
+2026-02-13 15:14:14 | INFO     | Saved forward transform: mni_to_subject_fwd_0.gz
+2026-02-13 15:14:14 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 15:14:14 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 15:14:14 | INFO     | Saved inverse transform: subject_to_mni_inv_1.gz
+2026-02-13 15:14:14 | INFO     | Warping cortical atlas...
+2026-02-13 15:14:14 | ERROR    | Module 2 failed.
+2026-02-13 15:14:14 | ERROR    | antsApplyTransforms returned non-zero exit code 1
+2026-02-13 15:14:14 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 80, in run_module2
+    step1_result = register_atlas_to_subject(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\step1_register_atlas.py", line 112, in register_atlas_to_subject
+    warped_cort = ants.apply_transforms(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\ants\registration\apply_transforms.py", line 186, in apply_transforms
+    raise RuntimeError('antsApplyTransforms returned non-zero exit code %d' % retval)
+RuntimeError: antsApplyTransforms returned non-zero exit code 1
+
+2026-02-13 15:16:25 | INFO     | ========================================
+2026-02-13 15:16:25 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 15:16:25 | INFO     | ========================================
+2026-02-13 15:16:25 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 15:16:25 | INFO     | Loading subject (T0)...
+2026-02-13 15:16:25 | INFO     | Loading MNI template...
+2026-02-13 15:16:25 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 15:16:41 | INFO     | Registration completed in 0.26 minutes
+2026-02-13 15:16:41 | INFO     | Saving transforms...
+2026-02-13 15:16:41 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 15:16:41 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 15:16:41 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 15:16:41 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 15:16:41 | INFO     | Warping cortical atlas...
+2026-02-13 15:16:41 | INFO     | Warping subcortical atlas...
+2026-02-13 15:16:41 | INFO     | Atlas registration complete.
+2026-02-13 15:16:41 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 15:16:41 | INFO     | Loading Jacobian map...
+2026-02-13 15:16:41 | INFO     | Loading warped cortical atlas...
+2026-02-13 15:16:41 | INFO     | Loading warped subcortical atlas...
+2026-02-13 15:16:41 | INFO     | Loading ROI configuration...
+2026-02-13 15:16:41 | INFO     | Validating ROI label exclusivity...
+2026-02-13 15:16:41 | ERROR    | Module 2 failed.
+2026-02-13 15:16:41 | ERROR    | Overlapping ROI labels detected in roi_labels.json. ROIs must be mutually exclusive.
+2026-02-13 15:16:41 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 98, in run_module2
+    step2_result = compute_roi_metrics(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\step2_roi_extraction.py", line 62, in compute_roi_metrics
+    raise ValueError(
+ValueError: Overlapping ROI labels detected in roi_labels.json. ROIs must be mutually exclusive.
+
+2026-02-13 15:23:19 | INFO     | ========================================
+2026-02-13 15:23:19 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 15:23:19 | INFO     | ========================================
+2026-02-13 15:23:19 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 15:23:19 | INFO     | Loading subject (T0)...
+2026-02-13 15:23:19 | INFO     | Loading MNI template...
+2026-02-13 15:23:19 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 15:23:39 | INFO     | Registration completed in 0.34 minutes
+2026-02-13 15:23:39 | INFO     | Saving transforms...
+2026-02-13 15:23:39 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 15:23:39 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 15:23:39 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 15:23:39 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 15:23:39 | INFO     | Warping cortical atlas...
+2026-02-13 15:23:39 | INFO     | Warping subcortical atlas...
+2026-02-13 15:23:39 | INFO     | Atlas registration complete.
+2026-02-13 15:23:39 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 15:23:39 | INFO     | Loading Jacobian map...
+2026-02-13 15:23:40 | INFO     | Loading warped cortical atlas...
+2026-02-13 15:23:40 | INFO     | Loading warped subcortical atlas...
+2026-02-13 15:23:40 | INFO     | Loading ROI configuration...
+2026-02-13 15:23:40 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 15:23:40 | INFO     | hippocampus: -1.457%/year | Voxels=7906
+2026-02-13 15:23:40 | INFO     | entorhinal_cortex: -5.650%/year | Voxels=7479
+2026-02-13 15:23:40 | INFO     | temporal_lobe: -1.557%/year | Voxels=117703
+2026-02-13 15:23:40 | INFO     | parietal_lobe: -0.450%/year | Voxels=58243
+2026-02-13 15:23:40 | INFO     | ventricles: 0.679%/year | Voxels=14087
+2026-02-13 15:23:40 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 15:23:40 | INFO     | Loading normative reference data...
+2026-02-13 15:23:40 | INFO     | hippocampus: Z=-0.428
+2026-02-13 15:23:40 | INFO     | entorhinal_cortex: Z=-9.301
+2026-02-13 15:23:40 | INFO     | temporal_lobe: Z=-1.893
+2026-02-13 15:23:40 | INFO     | parietal_lobe: Z=0.376
+2026-02-13 15:23:40 | INFO     | ventricles: Z=-1.027
+2026-02-13 15:23:40 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 15:23:40 | INFO     | Final classification: Normal Progression | Score=2
+2026-02-13 15:23:40 | INFO     | Module 2 completed successfully.
+2026-02-13 15:23:40 | INFO     | ========================================
+2026-02-13 15:51:13 | INFO     | ========================================
+2026-02-13 15:51:13 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 15:51:13 | INFO     | ========================================
+2026-02-13 15:51:13 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 15:51:13 | INFO     | Loading subject (T0)...
+2026-02-13 15:51:13 | INFO     | Loading MNI template...
+2026-02-13 15:51:13 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 15:51:35 | INFO     | Registration completed in 0.36 minutes
+2026-02-13 15:51:35 | INFO     | Saving transforms...
+2026-02-13 15:51:35 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 15:51:35 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 15:51:35 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 15:51:35 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 15:51:35 | INFO     | Warping cortical atlas...
+2026-02-13 15:51:35 | INFO     | Warping subcortical atlas...
+2026-02-13 15:51:36 | INFO     | Atlas registration complete.
+2026-02-13 15:51:36 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 15:51:36 | INFO     | Loading Jacobian map...
+2026-02-13 15:51:36 | INFO     | Loading warped cortical atlas...
+2026-02-13 15:51:36 | INFO     | Loading warped subcortical atlas...
+2026-02-13 15:51:36 | INFO     | Loading ROI configuration...
+2026-02-13 15:51:36 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 15:51:36 | INFO     | hippocampus: -1.445%/year | Voxels=7916
+2026-02-13 15:51:36 | INFO     | entorhinal_cortex: -5.675%/year | Voxels=7471
+2026-02-13 15:51:36 | INFO     | temporal_lobe: -1.552%/year | Voxels=117478
+2026-02-13 15:51:36 | INFO     | parietal_lobe: -0.448%/year | Voxels=58580
+2026-02-13 15:51:36 | INFO     | ventricles: 0.671%/year | Voxels=14060
+2026-02-13 15:51:36 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 15:51:36 | INFO     | Loading normative reference data...
+2026-02-13 15:51:36 | INFO     | hippocampus: Z=-0.306
+2026-02-13 15:51:36 | INFO     | entorhinal_cortex: Z=-3.896
+2026-02-13 15:51:36 | INFO     | temporal_lobe: Z=-1.074
+2026-02-13 15:51:36 | INFO     | parietal_lobe: Z=0.253
+2026-02-13 15:51:36 | INFO     | ventricles: Z=-0.829
+2026-02-13 15:51:36 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 15:51:36 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 15:51:36 | INFO     | Module 2 completed successfully.
+2026-02-13 15:51:36 | INFO     | ========================================
+2026-02-13 16:50:27 | INFO     | ========================================
+2026-02-13 16:50:27 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 16:50:27 | INFO     | ========================================
+2026-02-13 16:50:27 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 16:50:27 | INFO     | Loading subject (T0)...
+2026-02-13 16:50:27 | INFO     | Loading MNI template...
+2026-02-13 16:50:27 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 16:50:44 | INFO     | Registration completed in 0.28 minutes
+2026-02-13 16:50:44 | INFO     | Saving transforms...
+2026-02-13 16:50:44 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 16:50:44 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 16:50:44 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 16:50:44 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 16:50:44 | INFO     | Warping cortical atlas...
+2026-02-13 16:50:44 | INFO     | Warping subcortical atlas...
+2026-02-13 16:50:45 | INFO     | Atlas registration complete.
+2026-02-13 16:50:45 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 16:50:45 | INFO     | Loading Jacobian map...
+2026-02-13 16:50:45 | INFO     | Loading warped cortical atlas...
+2026-02-13 16:50:45 | INFO     | Loading warped subcortical atlas...
+2026-02-13 16:50:45 | INFO     | Loading ROI configuration...
+2026-02-13 16:50:45 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 16:50:45 | INFO     | hippocampus: -1.445%/year | Voxels=7892
+2026-02-13 16:50:45 | INFO     | entorhinal_cortex: -5.619%/year | Voxels=7525
+2026-02-13 16:50:45 | INFO     | temporal_lobe: -1.547%/year | Voxels=117806
+2026-02-13 16:50:45 | INFO     | parietal_lobe: -0.465%/year | Voxels=58432
+2026-02-13 16:50:45 | INFO     | ventricles: 0.663%/year | Voxels=14042
+2026-02-13 16:50:45 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 16:50:45 | INFO     | Loading normative reference data...
+2026-02-13 16:50:45 | INFO     | hippocampus: Z=-0.306
+2026-02-13 16:50:45 | INFO     | entorhinal_cortex: Z=-3.849
+2026-02-13 16:50:45 | INFO     | temporal_lobe: Z=-1.067
+2026-02-13 16:50:45 | INFO     | parietal_lobe: Z=0.224
+2026-02-13 16:50:45 | INFO     | ventricles: Z=-0.837
+2026-02-13 16:50:45 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 16:50:45 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 16:50:45 | INFO     | STEP 5A — Exporting Deterministic T1 Coronal Slice
+2026-02-13 16:50:46 | INFO     | T1 slice saved at: Data\outputs\module2\step5_t1_coronal_slice.png
+2026-02-13 16:50:46 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 16:50:46 | INFO     | Validating Step 2 output...
+2026-02-13 16:50:46 | INFO     | Validating Step 3 output...
+2026-02-13 16:50:46 | INFO     | Validating Step 4 output...
+2026-02-13 16:50:46 | INFO     | Validating context images...
+2026-02-13 16:50:46 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 16:50:46 | INFO     | Module 2 completed successfully.
+2026-02-13 16:50:46 | INFO     | ========================================
+2026-02-13 16:56:15 | INFO     | ========================================
+2026-02-13 16:56:15 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 16:56:15 | INFO     | ========================================
+2026-02-13 16:56:15 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 16:56:15 | INFO     | Loading subject (T0)...
+2026-02-13 16:56:15 | INFO     | Loading MNI template...
+2026-02-13 16:56:15 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 16:56:31 | INFO     | Registration completed in 0.26 minutes
+2026-02-13 16:56:31 | INFO     | Saving transforms...
+2026-02-13 16:56:31 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 16:56:31 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 16:56:31 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 16:56:31 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 16:56:31 | INFO     | Warping cortical atlas...
+2026-02-13 16:56:31 | INFO     | Warping subcortical atlas...
+2026-02-13 16:56:31 | INFO     | Atlas registration complete.
+2026-02-13 16:56:31 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 16:56:31 | INFO     | Loading Jacobian map...
+2026-02-13 16:56:32 | INFO     | Loading warped cortical atlas...
+2026-02-13 16:56:32 | INFO     | Loading warped subcortical atlas...
+2026-02-13 16:56:32 | INFO     | Loading ROI configuration...
+2026-02-13 16:56:32 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 16:56:32 | INFO     | hippocampus: -1.485%/year | Voxels=7892
+2026-02-13 16:56:32 | INFO     | entorhinal_cortex: -5.638%/year | Voxels=7526
+2026-02-13 16:56:32 | INFO     | temporal_lobe: -1.540%/year | Voxels=117869
+2026-02-13 16:56:32 | INFO     | parietal_lobe: -0.432%/year | Voxels=58652
+2026-02-13 16:56:32 | INFO     | ventricles: 0.638%/year | Voxels=14008
+2026-02-13 16:56:32 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 16:56:32 | INFO     | Loading normative reference data...
+2026-02-13 16:56:32 | INFO     | hippocampus: Z=-0.356
+2026-02-13 16:56:32 | INFO     | entorhinal_cortex: Z=-3.865
+2026-02-13 16:56:32 | INFO     | temporal_lobe: Z=-1.057
+2026-02-13 16:56:32 | INFO     | parietal_lobe: Z=0.280
+2026-02-13 16:56:32 | INFO     | ventricles: Z=-0.862
+2026-02-13 16:56:32 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 16:56:32 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 16:56:32 | INFO     | STEP 5A — Exporting Deterministic T1 Coronal Slice
+2026-02-13 16:56:32 | INFO     | T1 slice saved at: Data\outputs\module2\step5_t1_coronal_slice.png
+2026-02-13 16:56:32 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 16:56:32 | INFO     | Validating Step 2 output...
+2026-02-13 16:56:32 | INFO     | Validating Step 3 output...
+2026-02-13 16:56:32 | INFO     | Validating Step 4 output...
+2026-02-13 16:56:32 | INFO     | Validating context images...
+2026-02-13 16:56:32 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 16:56:32 | INFO     | Module 2 completed successfully.
+2026-02-13 16:56:32 | INFO     | ========================================
+2026-02-13 16:58:35 | INFO     | ========================================
+2026-02-13 16:58:35 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 16:58:35 | INFO     | ========================================
+2026-02-13 16:58:35 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 16:58:35 | INFO     | Loading subject (T0)...
+2026-02-13 16:58:35 | INFO     | Loading MNI template...
+2026-02-13 16:58:35 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 16:58:52 | INFO     | Registration completed in 0.28 minutes
+2026-02-13 16:58:52 | INFO     | Saving transforms...
+2026-02-13 16:58:52 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 16:58:52 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 16:58:52 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 16:58:52 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 16:58:52 | INFO     | Warping cortical atlas...
+2026-02-13 16:58:52 | INFO     | Warping subcortical atlas...
+2026-02-13 16:58:52 | INFO     | Atlas registration complete.
+2026-02-13 16:58:52 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 16:58:52 | INFO     | Loading Jacobian map...
+2026-02-13 16:58:53 | INFO     | Loading warped cortical atlas...
+2026-02-13 16:58:53 | INFO     | Loading warped subcortical atlas...
+2026-02-13 16:58:53 | INFO     | Loading ROI configuration...
+2026-02-13 16:58:53 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 16:58:53 | INFO     | hippocampus: -1.472%/year | Voxels=7865
+2026-02-13 16:58:53 | INFO     | entorhinal_cortex: -5.633%/year | Voxels=7500
+2026-02-13 16:58:53 | INFO     | temporal_lobe: -1.531%/year | Voxels=118167
+2026-02-13 16:58:53 | INFO     | parietal_lobe: -0.452%/year | Voxels=58556
+2026-02-13 16:58:53 | INFO     | ventricles: 0.631%/year | Voxels=14015
+2026-02-13 16:58:53 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 16:58:53 | INFO     | Loading normative reference data...
+2026-02-13 16:58:53 | INFO     | hippocampus: Z=-0.339
+2026-02-13 16:58:53 | INFO     | entorhinal_cortex: Z=-3.861
+2026-02-13 16:58:53 | INFO     | temporal_lobe: Z=-1.045
+2026-02-13 16:58:53 | INFO     | parietal_lobe: Z=0.246
+2026-02-13 16:58:53 | INFO     | ventricles: Z=-0.869
+2026-02-13 16:58:53 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 16:58:53 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 16:58:53 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 16:58:53 | INFO     | T1 slice saved at: Data\outputs\module2\step5_t1_axial_slice.png
+2026-02-13 16:58:53 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 16:58:53 | INFO     | Validating Step 2 output...
+2026-02-13 16:58:53 | INFO     | Validating Step 3 output...
+2026-02-13 16:58:53 | INFO     | Validating Step 4 output...
+2026-02-13 16:58:53 | INFO     | Validating context images...
+2026-02-13 16:58:53 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 16:58:53 | INFO     | Module 2 completed successfully.
+2026-02-13 16:58:53 | INFO     | ========================================
+2026-02-13 18:02:48 | INFO     | ========================================
+2026-02-13 18:02:48 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 18:02:48 | INFO     | ========================================
+2026-02-13 18:02:48 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 18:02:48 | INFO     | Loading subject (T0)...
+2026-02-13 18:02:48 | INFO     | Loading MNI template...
+2026-02-13 18:02:48 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 18:03:03 | INFO     | Registration completed in 0.24 minutes
+2026-02-13 18:03:03 | INFO     | Saving transforms...
+2026-02-13 18:03:03 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 18:03:03 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 18:03:03 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 18:03:03 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 18:03:03 | INFO     | Warping cortical atlas...
+2026-02-13 18:03:03 | INFO     | Warping subcortical atlas...
+2026-02-13 18:03:03 | INFO     | Atlas registration complete.
+2026-02-13 18:03:03 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 18:03:03 | INFO     | Loading Jacobian map...
+2026-02-13 18:03:03 | INFO     | Loading warped cortical atlas...
+2026-02-13 18:03:03 | INFO     | Loading warped subcortical atlas...
+2026-02-13 18:03:03 | INFO     | Loading ROI configuration...
+2026-02-13 18:03:03 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 18:03:03 | INFO     | hippocampus: -1.409%/year | Voxels=7886
+2026-02-13 18:03:04 | INFO     | entorhinal_cortex: -5.666%/year | Voxels=7501
+2026-02-13 18:03:04 | INFO     | temporal_lobe: -1.563%/year | Voxels=117543
+2026-02-13 18:03:04 | INFO     | parietal_lobe: -0.461%/year | Voxels=58409
+2026-02-13 18:03:04 | INFO     | ventricles: 0.610%/year | Voxels=14008
+2026-02-13 18:03:04 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 18:03:04 | INFO     | Loading normative reference data...
+2026-02-13 18:03:04 | INFO     | hippocampus: Z=-0.261
+2026-02-13 18:03:04 | INFO     | entorhinal_cortex: Z=-3.888
+2026-02-13 18:03:04 | INFO     | temporal_lobe: Z=-1.091
+2026-02-13 18:03:04 | INFO     | parietal_lobe: Z=0.231
+2026-02-13 18:03:04 | INFO     | ventricles: Z=-0.890
+2026-02-13 18:03:04 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 18:03:04 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 18:03:04 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 18:03:04 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 18:03:04 | INFO     | Validating Step 2 output...
+2026-02-13 18:03:04 | INFO     | Validating Step 3 output...
+2026-02-13 18:03:04 | INFO     | Validating Step 4 output...
+2026-02-13 18:03:04 | INFO     | Validating context images...
+2026-02-13 18:03:04 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 18:03:04 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 18:03:04 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 18:03:07 | ERROR    | Module 2 failed.
+2026-02-13 18:03:07 | ERROR    | Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-02-13 18:03:07 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 203, in run_module2
+    medgemma = MedGemmaClient(logger)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 77, in __init__
+    self.model, self.processor = self._load_model()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 103, in _load_model
+    model = AutoModelForImageTextToText.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 3928, in from_pretrained
+    device_map = check_and_set_device_map(device_map)  # warn, error and fix the device map
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\integrations\accelerate.py", line 134, in check_and_set_device_map
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+
+2026-02-13 18:03:32 | INFO     | ========================================
+2026-02-13 18:03:32 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 18:03:32 | INFO     | ========================================
+2026-02-13 18:03:32 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 18:03:32 | INFO     | Loading subject (T0)...
+2026-02-13 18:03:32 | INFO     | Loading MNI template...
+2026-02-13 18:03:32 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 18:03:49 | INFO     | Registration completed in 0.30 minutes
+2026-02-13 18:03:49 | INFO     | Saving transforms...
+2026-02-13 18:03:50 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 18:03:50 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 18:03:50 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 18:03:50 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 18:03:50 | INFO     | Warping cortical atlas...
+2026-02-13 18:03:50 | INFO     | Warping subcortical atlas...
+2026-02-13 18:03:50 | INFO     | Atlas registration complete.
+2026-02-13 18:03:50 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 18:03:50 | INFO     | Loading Jacobian map...
+2026-02-13 18:03:50 | INFO     | Loading warped cortical atlas...
+2026-02-13 18:03:50 | INFO     | Loading warped subcortical atlas...
+2026-02-13 18:03:50 | INFO     | Loading ROI configuration...
+2026-02-13 18:03:50 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 18:03:50 | INFO     | hippocampus: -1.478%/year | Voxels=7866
+2026-02-13 18:03:50 | INFO     | entorhinal_cortex: -5.594%/year | Voxels=7521
+2026-02-13 18:03:51 | INFO     | temporal_lobe: -1.556%/year | Voxels=117799
+2026-02-13 18:03:51 | INFO     | parietal_lobe: -0.437%/year | Voxels=58603
+2026-02-13 18:03:51 | INFO     | ventricles: 0.619%/year | Voxels=13997
+2026-02-13 18:03:51 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 18:03:51 | INFO     | Loading normative reference data...
+2026-02-13 18:03:51 | INFO     | hippocampus: Z=-0.347
+2026-02-13 18:03:51 | INFO     | entorhinal_cortex: Z=-3.828
+2026-02-13 18:03:51 | INFO     | temporal_lobe: Z=-1.080
+2026-02-13 18:03:51 | INFO     | parietal_lobe: Z=0.271
+2026-02-13 18:03:51 | INFO     | ventricles: Z=-0.881
+2026-02-13 18:03:51 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 18:03:51 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 18:03:51 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 18:03:51 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 18:03:51 | INFO     | Validating Step 2 output...
+2026-02-13 18:03:51 | INFO     | Validating Step 3 output...
+2026-02-13 18:03:51 | INFO     | Validating Step 4 output...
+2026-02-13 18:03:51 | INFO     | Validating context images...
+2026-02-13 18:03:51 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 18:03:51 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 18:03:51 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 18:03:54 | ERROR    | Module 2 failed.
+2026-02-13 18:03:54 | ERROR    | Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`
+2026-02-13 18:03:54 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 203, in run_module2
+    medgemma = MedGemmaClient(logger)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 77, in __init__
+    self.model, self.processor = self._load_model()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 103, in _load_model
+    model = AutoModelForImageTextToText.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 3964, in from_pretrained
+    hf_quantizer, config, device_map = get_hf_quantizer(
+                                       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\quantizers\auto.py", line 326, in get_hf_quantizer
+    hf_quantizer.validate_environment(
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\quantizers\quantizer_bnb_4bit.py", line 60, in validate_environment
+    raise ImportError(
+ImportError: Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`
+
+2026-02-13 18:04:19 | INFO     | ========================================
+2026-02-13 18:04:19 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 18:04:19 | INFO     | ========================================
+2026-02-13 18:04:19 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 18:04:19 | INFO     | Loading subject (T0)...
+2026-02-13 18:04:19 | INFO     | Loading MNI template...
+2026-02-13 18:04:19 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 18:04:35 | INFO     | Registration completed in 0.26 minutes
+2026-02-13 18:04:35 | INFO     | Saving transforms...
+2026-02-13 18:04:35 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 18:04:35 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 18:04:35 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 18:04:35 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 18:04:35 | INFO     | Warping cortical atlas...
+2026-02-13 18:04:35 | INFO     | Warping subcortical atlas...
+2026-02-13 18:04:35 | INFO     | Atlas registration complete.
+2026-02-13 18:04:35 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 18:04:35 | INFO     | Loading Jacobian map...
+2026-02-13 18:04:35 | INFO     | Loading warped cortical atlas...
+2026-02-13 18:04:35 | INFO     | Loading warped subcortical atlas...
+2026-02-13 18:04:36 | INFO     | Loading ROI configuration...
+2026-02-13 18:04:36 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 18:04:36 | INFO     | hippocampus: -1.451%/year | Voxels=7921
+2026-02-13 18:04:36 | INFO     | entorhinal_cortex: -5.651%/year | Voxels=7474
+2026-02-13 18:04:36 | INFO     | temporal_lobe: -1.560%/year | Voxels=117341
+2026-02-13 18:04:36 | INFO     | parietal_lobe: -0.434%/year | Voxels=58788
+2026-02-13 18:04:36 | INFO     | ventricles: 0.635%/year | Voxels=14038
+2026-02-13 18:04:36 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 18:04:36 | INFO     | Loading normative reference data...
+2026-02-13 18:04:36 | INFO     | hippocampus: Z=-0.314
+2026-02-13 18:04:36 | INFO     | entorhinal_cortex: Z=-3.876
+2026-02-13 18:04:36 | INFO     | temporal_lobe: Z=-1.086
+2026-02-13 18:04:36 | INFO     | parietal_lobe: Z=0.276
+2026-02-13 18:04:36 | INFO     | ventricles: Z=-0.865
+2026-02-13 18:04:36 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 18:04:36 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 18:04:36 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 18:04:36 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 18:04:36 | INFO     | Validating Step 2 output...
+2026-02-13 18:04:36 | INFO     | Validating Step 3 output...
+2026-02-13 18:04:36 | INFO     | Validating Step 4 output...
+2026-02-13 18:04:36 | INFO     | Validating context images...
+2026-02-13 18:04:36 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 18:04:36 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 18:04:36 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 18:13:08 | INFO     | ========================================
+2026-02-13 18:13:08 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 18:13:08 | INFO     | ========================================
+2026-02-13 18:13:08 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 18:13:08 | INFO     | Loading subject (T0)...
+2026-02-13 18:13:08 | INFO     | Loading MNI template...
+2026-02-13 18:13:08 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 18:13:23 | INFO     | Registration completed in 0.24 minutes
+2026-02-13 18:13:23 | INFO     | Saving transforms...
+2026-02-13 18:13:23 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 18:13:23 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 18:13:23 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 18:13:23 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 18:13:23 | INFO     | Warping cortical atlas...
+2026-02-13 18:13:23 | INFO     | Warping subcortical atlas...
+2026-02-13 18:13:23 | INFO     | Atlas registration complete.
+2026-02-13 18:13:23 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 18:13:23 | INFO     | Loading Jacobian map...
+2026-02-13 18:13:24 | INFO     | Loading warped cortical atlas...
+2026-02-13 18:13:24 | INFO     | Loading warped subcortical atlas...
+2026-02-13 18:13:24 | INFO     | Loading ROI configuration...
+2026-02-13 18:13:24 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 18:13:24 | INFO     | hippocampus: -1.436%/year | Voxels=7941
+2026-02-13 18:13:24 | INFO     | entorhinal_cortex: -5.668%/year | Voxels=7431
+2026-02-13 18:13:24 | INFO     | temporal_lobe: -1.571%/year | Voxels=117249
+2026-02-13 18:13:24 | INFO     | parietal_lobe: -0.440%/year | Voxels=58883
+2026-02-13 18:13:24 | INFO     | ventricles: 0.610%/year | Voxels=14023
+2026-02-13 18:13:24 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 18:13:24 | INFO     | Loading normative reference data...
+2026-02-13 18:13:24 | INFO     | hippocampus: Z=-0.295
+2026-02-13 18:13:24 | INFO     | entorhinal_cortex: Z=-3.890
+2026-02-13 18:13:24 | INFO     | temporal_lobe: Z=-1.102
+2026-02-13 18:13:24 | INFO     | parietal_lobe: Z=0.266
+2026-02-13 18:13:24 | INFO     | ventricles: Z=-0.890
+2026-02-13 18:13:24 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 18:13:24 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 18:13:24 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 18:13:24 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 18:13:24 | INFO     | Validating Step 2 output...
+2026-02-13 18:13:24 | INFO     | Validating Step 3 output...
+2026-02-13 18:13:24 | INFO     | Validating Step 4 output...
+2026-02-13 18:13:24 | INFO     | Validating context images...
+2026-02-13 18:13:24 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 18:13:24 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 18:13:24 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 18:13:43 | ERROR    | Module 2 failed.
+2026-02-13 18:13:43 | ERROR    | We encountered some issues during automatic conversion of the weights. For details look at the `CONVERSION` entries of the above report!
+2026-02-13 18:13:43 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4217, in _finalize_model_loading
+    model._initialize_missing_keys(load_config.is_quantized)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4487, in _initialize_missing_keys
+    self.initialize_weights()
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2343, in initialize_weights
+    self.smart_apply(self._initialize_weights)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2334, in smart_apply
+    module.smart_apply(module._initialize_weights)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2334, in smart_apply
+    module.smart_apply(module._initialize_weights)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2334, in smart_apply
+    module.smart_apply(module._initialize_weights)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2336, in smart_apply
+    module.smart_apply(fn)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2336, in smart_apply
+    module.smart_apply(fn)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2336, in smart_apply
+    module.smart_apply(fn)
+  [Previous line repeated 2 more times]
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2337, in smart_apply
+    fn(self)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2314, in _initialize_weights
+    self._init_weights(module)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\models\siglip\modeling_siglip.py", line 430, in _init_weights
+    init.lecun_normal_(module.weight)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\initialization.py", line 190, in lecun_normal_
+    _variance_scaling(tensor, mode="fan_in", distribution="truncated_normal")
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\initialization.py", line 178, in _variance_scaling
+    trunc_normal_(tensor, std=math.sqrt(variance) / 0.87962566103423978)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\initialization.py", line 137, in trunc_normal_
+    return TORCH_INIT_FUNCTIONS["trunc_normal_"](tensor, mean=mean, std=std, a=a, b=b, generator=generator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\nn\init.py", line 224, in trunc_normal_
+    return _no_grad_trunc_normal_(tensor, mean, std, a, b, generator=generator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\nn\init.py", line 47, in _no_grad_trunc_normal_
+    tensor.uniform_(2 * l - 1, 2 * u - 1, generator=generator)
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 203, in run_module2
+    medgemma = MedGemmaClient(logger)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 77, in __init__
+    self.model, self.processor = self._load_model()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 103, in _load_model
+    model = AutoModelForImageTextToText.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4064, in from_pretrained
+    loading_info = cls._finalize_model_loading(model, load_config, loading_info)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4225, in _finalize_model_loading
+    log_state_dict_report(
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\utils\loading_report.py", line 273, in log_state_dict_report
+    raise RuntimeError(
+RuntimeError: We encountered some issues during automatic conversion of the weights. For details look at the `CONVERSION` entries of the above report!
+
+2026-02-13 18:17:01 | INFO     | ========================================
+2026-02-13 18:17:01 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 18:17:01 | INFO     | ========================================
+2026-02-13 18:17:01 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 18:17:01 | INFO     | Loading subject (T0)...
+2026-02-13 18:17:01 | INFO     | Loading MNI template...
+2026-02-13 18:17:01 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 18:17:16 | INFO     | Registration completed in 0.26 minutes
+2026-02-13 18:17:16 | INFO     | Saving transforms...
+2026-02-13 18:17:16 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 18:17:16 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 18:17:16 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 18:17:17 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 18:17:17 | INFO     | Warping cortical atlas...
+2026-02-13 18:17:17 | INFO     | Warping subcortical atlas...
+2026-02-13 18:17:17 | INFO     | Atlas registration complete.
+2026-02-13 18:17:17 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 18:17:17 | INFO     | Loading Jacobian map...
+2026-02-13 18:17:17 | INFO     | Loading warped cortical atlas...
+2026-02-13 18:17:17 | INFO     | Loading warped subcortical atlas...
+2026-02-13 18:17:17 | INFO     | Loading ROI configuration...
+2026-02-13 18:17:17 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 18:17:17 | INFO     | hippocampus: -1.414%/year | Voxels=7913
+2026-02-13 18:17:17 | INFO     | entorhinal_cortex: -5.659%/year | Voxels=7475
+2026-02-13 18:17:17 | INFO     | temporal_lobe: -1.552%/year | Voxels=117576
+2026-02-13 18:17:18 | INFO     | parietal_lobe: -0.480%/year | Voxels=58549
+2026-02-13 18:17:18 | INFO     | ventricles: 0.652%/year | Voxels=14017
+2026-02-13 18:17:18 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 18:17:18 | INFO     | Loading normative reference data...
+2026-02-13 18:17:18 | INFO     | hippocampus: Z=-0.267
+2026-02-13 18:17:18 | INFO     | entorhinal_cortex: Z=-3.882
+2026-02-13 18:17:18 | INFO     | temporal_lobe: Z=-1.075
+2026-02-13 18:17:18 | INFO     | parietal_lobe: Z=0.201
+2026-02-13 18:17:18 | INFO     | ventricles: Z=-0.848
+2026-02-13 18:17:18 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 18:17:18 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 18:17:18 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 18:17:18 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 18:17:18 | INFO     | Validating Step 2 output...
+2026-02-13 18:17:18 | INFO     | Validating Step 3 output...
+2026-02-13 18:17:18 | INFO     | Validating Step 4 output...
+2026-02-13 18:17:18 | INFO     | Validating context images...
+2026-02-13 18:17:18 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 18:17:18 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 18:17:18 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 18:17:24 | ERROR    | Module 2 failed.
+2026-02-13 18:17:24 | ERROR    | CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2026-02-13 18:17:24 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 203, in run_module2
+    medgemma = MedGemmaClient(logger)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 77, in __init__
+    self.model, self.processor = self._load_model()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Model_call.py", line 103, in _load_model
+    model = AutoModelForImageTextToText.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4064, in from_pretrained
+    loading_info = cls._finalize_model_loading(model, load_config, loading_info)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4217, in _finalize_model_loading
+    model._initialize_missing_keys(load_config.is_quantized)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 4487, in _initialize_missing_keys
+    self.initialize_weights()
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2343, in initialize_weights
+    self.smart_apply(self._initialize_weights)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2334, in smart_apply
+    module.smart_apply(module._initialize_weights)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2334, in smart_apply
+    module.smart_apply(module._initialize_weights)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2336, in smart_apply
+    module.smart_apply(fn)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2337, in smart_apply
+    fn(self)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\modeling_utils.py", line 2314, in _initialize_weights
+    self._init_weights(module)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\models\gemma3\modeling_gemma3.py", line 475, in _init_weights
+    init.constant_(module.embed_scale, module.scalar_embed_scale)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\transformers\initialization.py", line 60, in constant_
+    return TORCH_INIT_FUNCTIONS["constant_"](tensor, val=val)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\nn\init.py", line 242, in constant_
+    return _no_grad_fill_(tensor, val)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\.venv\Lib\site-packages\torch\nn\init.py", line 64, in _no_grad_fill_
+    return tensor.fill_(val)
+           ^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+2026-02-13 20:00:26 | INFO     | ========================================
+2026-02-13 20:00:26 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 20:00:26 | INFO     | ========================================
+2026-02-13 20:00:26 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 20:00:26 | INFO     | Loading subject (T0)...
+2026-02-13 20:00:26 | INFO     | Loading MNI template...
+2026-02-13 20:00:26 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 20:00:42 | INFO     | Registration completed in 0.27 minutes
+2026-02-13 20:00:42 | INFO     | Saving transforms...
+2026-02-13 20:00:42 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 20:00:42 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 20:00:42 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 20:00:42 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 20:00:42 | INFO     | Warping cortical atlas...
+2026-02-13 20:00:43 | INFO     | Warping subcortical atlas...
+2026-02-13 20:00:43 | INFO     | Atlas registration complete.
+2026-02-13 20:00:43 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 20:00:43 | INFO     | Loading Jacobian map...
+2026-02-13 20:00:43 | INFO     | Loading warped cortical atlas...
+2026-02-13 20:00:43 | INFO     | Loading warped subcortical atlas...
+2026-02-13 20:00:43 | INFO     | Loading ROI configuration...
+2026-02-13 20:00:43 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 20:00:43 | INFO     | hippocampus: -1.450%/year | Voxels=7906
+2026-02-13 20:00:43 | INFO     | entorhinal_cortex: -5.657%/year | Voxels=7477
+2026-02-13 20:00:43 | INFO     | temporal_lobe: -1.552%/year | Voxels=117768
+2026-02-13 20:00:44 | INFO     | parietal_lobe: -0.469%/year | Voxels=58796
+2026-02-13 20:00:44 | INFO     | ventricles: 0.608%/year | Voxels=14005
+2026-02-13 20:00:44 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 20:00:44 | INFO     | Loading normative reference data...
+2026-02-13 20:00:44 | INFO     | hippocampus: Z=-0.312
+2026-02-13 20:00:44 | INFO     | entorhinal_cortex: Z=-3.880
+2026-02-13 20:00:44 | INFO     | temporal_lobe: Z=-1.075
+2026-02-13 20:00:44 | INFO     | parietal_lobe: Z=0.218
+2026-02-13 20:00:44 | INFO     | ventricles: Z=-0.892
+2026-02-13 20:00:44 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 20:00:44 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 20:00:44 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 20:00:44 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 20:00:44 | INFO     | Validating Step 2 output...
+2026-02-13 20:00:44 | INFO     | Validating Step 3 output...
+2026-02-13 20:00:44 | INFO     | Validating Step 4 output...
+2026-02-13 20:00:44 | INFO     | Validating context images...
+2026-02-13 20:00:44 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 20:00:44 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 20:00:44 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 20:02:07 | INFO     | {'stage': 'stage4', 'duration_sec': 70.68, 'tokens': 229, 'ram_pre_mb': 10284.95, 'ram_post_mb': 10334.0, 'gpu_pre': {'allocated_mb': 6053.07, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6164.0, 'total_mb': 8150.56}}
+2026-02-13 20:02:07 | ERROR    | Module 2 failed.
+2026-02-13 20:02:07 | ERROR    | Unauthorized numeric value detected: -1.5
+2026-02-13 20:02:07 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 211, in run_module2
+    step6_result = run_multistage_reasoning(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 241, in run_multistage_reasoning
+    stage1_output = _run_stage(
+                    ^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 208, in _run_stage
+    _check_numeric_integrity(response, payload)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 127, in _check_numeric_integrity
+    raise ValueError(f"Unauthorized numeric value detected: {number}")
+ValueError: Unauthorized numeric value detected: -1.5
+
+2026-02-13 20:05:44 | INFO     | ========================================
+2026-02-13 20:05:44 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 20:05:44 | INFO     | ========================================
+2026-02-13 20:05:44 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 20:05:44 | INFO     | Loading subject (T0)...
+2026-02-13 20:05:44 | INFO     | Loading MNI template...
+2026-02-13 20:05:44 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 20:05:59 | INFO     | Registration completed in 0.25 minutes
+2026-02-13 20:05:59 | INFO     | Saving transforms...
+2026-02-13 20:05:59 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 20:05:59 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 20:05:59 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 20:05:59 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 20:05:59 | INFO     | Warping cortical atlas...
+2026-02-13 20:06:00 | INFO     | Warping subcortical atlas...
+2026-02-13 20:06:00 | INFO     | Atlas registration complete.
+2026-02-13 20:06:00 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 20:06:00 | INFO     | Loading Jacobian map...
+2026-02-13 20:06:00 | INFO     | Loading warped cortical atlas...
+2026-02-13 20:06:00 | INFO     | Loading warped subcortical atlas...
+2026-02-13 20:06:00 | INFO     | Loading ROI configuration...
+2026-02-13 20:06:00 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 20:06:00 | INFO     | hippocampus: -1.442%/year | Voxels=7953
+2026-02-13 20:06:00 | INFO     | entorhinal_cortex: -5.666%/year | Voxels=7478
+2026-02-13 20:06:00 | INFO     | temporal_lobe: -1.546%/year | Voxels=117607
+2026-02-13 20:06:00 | INFO     | parietal_lobe: -0.431%/year | Voxels=59036
+2026-02-13 20:06:00 | INFO     | ventricles: 0.605%/year | Voxels=14018
+2026-02-13 20:06:00 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 20:06:00 | INFO     | Loading normative reference data...
+2026-02-13 20:06:00 | INFO     | hippocampus: Z=-0.303
+2026-02-13 20:06:00 | INFO     | entorhinal_cortex: Z=-3.888
+2026-02-13 20:06:00 | INFO     | temporal_lobe: Z=-1.066
+2026-02-13 20:06:00 | INFO     | parietal_lobe: Z=0.281
+2026-02-13 20:06:00 | INFO     | ventricles: Z=-0.895
+2026-02-13 20:06:00 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 20:06:00 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 20:06:00 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 20:06:01 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 20:06:01 | INFO     | Validating Step 2 output...
+2026-02-13 20:06:01 | INFO     | Validating Step 3 output...
+2026-02-13 20:06:01 | INFO     | Validating Step 4 output...
+2026-02-13 20:06:01 | INFO     | Validating context images...
+2026-02-13 20:06:01 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 20:06:01 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 20:06:01 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 20:07:33 | INFO     | {'stage': 'stage4', 'duration_sec': 81.94, 'tokens': 260, 'ram_pre_mb': 10283.39, 'ram_post_mb': 10332.88, 'gpu_pre': {'allocated_mb': 6053.07, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6164.0, 'total_mb': 8150.56}}
+2026-02-13 20:07:33 | ERROR    | Module 2 failed.
+2026-02-13 20:07:33 | ERROR    | Unauthorized numeric value detected: -0.000
+2026-02-13 20:07:33 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 211, in run_module2
+    step6_result = run_multistage_reasoning(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 253, in run_multistage_reasoning
+    stage1_output = _run_stage(
+                    ^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 220, in _run_stage
+    _check_numeric_integrity(response, payload)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 138, in _check_numeric_integrity
+    raise ValueError(f"Unauthorized numeric value detected: {number}")
+ValueError: Unauthorized numeric value detected: -0.000
+
+2026-02-13 21:33:36 | INFO     | ========================================
+2026-02-13 21:33:36 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 21:33:36 | INFO     | ========================================
+2026-02-13 21:33:36 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 21:33:36 | INFO     | Loading subject (T0)...
+2026-02-13 21:33:36 | INFO     | Loading MNI template...
+2026-02-13 21:33:36 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 21:33:49 | INFO     | Registration completed in 0.21 minutes
+2026-02-13 21:33:49 | INFO     | Saving transforms...
+2026-02-13 21:33:49 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 21:33:49 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 21:33:49 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 21:33:49 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 21:33:49 | INFO     | Warping cortical atlas...
+2026-02-13 21:33:49 | INFO     | Warping subcortical atlas...
+2026-02-13 21:33:50 | INFO     | Atlas registration complete.
+2026-02-13 21:33:50 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 21:33:50 | INFO     | Loading Jacobian map...
+2026-02-13 21:33:50 | INFO     | Loading warped cortical atlas...
+2026-02-13 21:33:50 | INFO     | Loading warped subcortical atlas...
+2026-02-13 21:33:50 | INFO     | Loading ROI configuration...
+2026-02-13 21:33:50 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 21:33:50 | INFO     | hippocampus: -1.401%/year | Voxels=7982
+2026-02-13 21:33:50 | INFO     | entorhinal_cortex: -5.710%/year | Voxels=7403
+2026-02-13 21:33:50 | INFO     | temporal_lobe: -1.558%/year | Voxels=117516
+2026-02-13 21:33:50 | INFO     | parietal_lobe: -0.436%/year | Voxels=58797
+2026-02-13 21:33:50 | INFO     | ventricles: 0.608%/year | Voxels=14018
+2026-02-13 21:33:50 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 21:33:50 | INFO     | Loading normative reference data...
+2026-02-13 21:33:50 | INFO     | hippocampus: Z=-0.251
+2026-02-13 21:33:50 | INFO     | entorhinal_cortex: Z=-3.925
+2026-02-13 21:33:50 | INFO     | temporal_lobe: Z=-1.082
+2026-02-13 21:33:50 | INFO     | parietal_lobe: Z=0.273
+2026-02-13 21:33:50 | INFO     | ventricles: Z=-0.892
+2026-02-13 21:33:50 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 21:33:50 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 21:33:50 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 21:33:51 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 21:33:51 | INFO     | Validating Step 2 output...
+2026-02-13 21:33:51 | INFO     | Validating Step 3 output...
+2026-02-13 21:33:51 | INFO     | Validating Step 4 output...
+2026-02-13 21:33:51 | INFO     | Validating context images...
+2026-02-13 21:33:51 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 21:33:51 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 21:33:51 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 21:35:36 | INFO     | {'stage': 'stage4', 'duration_sec': 93.81, 'tokens': 307, 'ram_pre_mb': 10280.31, 'ram_post_mb': 10329.53, 'gpu_pre': {'allocated_mb': 6053.07, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6164.0, 'total_mb': 8150.56}}
+2026-02-13 21:37:17 | INFO     | {'stage': 'stage4', 'duration_sec': 101.1, 'tokens': 287, 'ram_pre_mb': 10451.15, 'ram_post_mb': 10479.41, 'gpu_pre': {'allocated_mb': 6071.46, 'reserved_mb': 6164.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6072.48, 'reserved_mb': 6252.0, 'total_mb': 8150.56}}
+2026-02-13 21:40:19 | INFO     | {'stage': 'stage4', 'duration_sec': 182.21, 'tokens': 484, 'ram_pre_mb': 10480.74, 'ram_post_mb': 10451.07, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6252.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6224.0, 'total_mb': 8150.56}}
+2026-02-13 21:43:01 | INFO     | {'stage': 'stage4', 'duration_sec': 161.5, 'tokens': 445, 'ram_pre_mb': 10452.86, 'ram_post_mb': 10450.84, 'gpu_pre': {'allocated_mb': 6054.09, 'reserved_mb': 6224.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.1, 'reserved_mb': 6230.0, 'total_mb': 8150.56}}
+2026-02-13 21:43:28 | INFO     | {'stage': 'stage4', 'duration_sec': 27.13, 'tokens': 76, 'ram_pre_mb': 10451.47, 'ram_post_mb': 10450.97, 'gpu_pre': {'allocated_mb': 6054.07, 'reserved_mb': 6230.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.07, 'reserved_mb': 6088.0, 'total_mb': 8150.56}}
+2026-02-13 21:43:55 | INFO     | {'stage': 'stage4', 'duration_sec': 26.95, 'tokens': 73, 'ram_pre_mb': 10451.53, 'ram_post_mb': 10451.05, 'gpu_pre': {'allocated_mb': 6054.07, 'reserved_mb': 6088.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.07, 'reserved_mb': 6084.0, 'total_mb': 8150.56}}
+2026-02-13 21:43:55 | ERROR    | Module 2 failed.
+2026-02-13 21:43:55 | ERROR    | Missing ROI reference in output: entorhinal_cortex
+2026-02-13 21:43:55 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 211, in run_module2
+    step6_result = run_multistage_reasoning(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 274, in run_multistage_reasoning
+    final_output = _execute_with_retry(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 168, in _execute_with_retry
+    _check_all_rois_present(response)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 99, in _check_all_rois_present
+    raise ValueError(f"Missing ROI reference in output: {roi}")
+ValueError: Missing ROI reference in output: entorhinal_cortex
+
+2026-02-13 22:00:28 | INFO     | ========================================
+2026-02-13 22:00:28 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 22:00:28 | INFO     | ========================================
+2026-02-13 22:00:28 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 22:00:28 | INFO     | Loading subject (T0)...
+2026-02-13 22:00:28 | INFO     | Loading MNI template...
+2026-02-13 22:00:28 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 22:00:46 | INFO     | Registration completed in 0.29 minutes
+2026-02-13 22:00:46 | INFO     | Saving transforms...
+2026-02-13 22:00:46 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 22:00:46 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 22:00:46 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 22:00:46 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 22:00:46 | INFO     | Warping cortical atlas...
+2026-02-13 22:00:46 | INFO     | Warping subcortical atlas...
+2026-02-13 22:00:47 | INFO     | Atlas registration complete.
+2026-02-13 22:00:47 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 22:00:47 | INFO     | Loading Jacobian map...
+2026-02-13 22:00:47 | INFO     | Loading warped cortical atlas...
+2026-02-13 22:00:47 | INFO     | Loading warped subcortical atlas...
+2026-02-13 22:00:47 | INFO     | Loading ROI configuration...
+2026-02-13 22:00:47 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 22:00:47 | INFO     | hippocampus: -1.405%/year | Voxels=7933
+2026-02-13 22:00:47 | INFO     | entorhinal_cortex: -5.708%/year | Voxels=7399
+2026-02-13 22:00:47 | INFO     | temporal_lobe: -1.574%/year | Voxels=117592
+2026-02-13 22:00:47 | INFO     | parietal_lobe: -0.458%/year | Voxels=58769
+2026-02-13 22:00:47 | INFO     | ventricles: 0.618%/year | Voxels=14019
+2026-02-13 22:00:47 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 22:00:47 | INFO     | Loading normative reference data...
+2026-02-13 22:00:47 | INFO     | hippocampus: Z=-0.256
+2026-02-13 22:00:47 | INFO     | entorhinal_cortex: Z=-3.923
+2026-02-13 22:00:47 | INFO     | temporal_lobe: Z=-1.105
+2026-02-13 22:00:47 | INFO     | parietal_lobe: Z=0.237
+2026-02-13 22:00:47 | INFO     | ventricles: Z=-0.882
+2026-02-13 22:00:47 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 22:00:47 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 22:00:47 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 22:00:47 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 22:00:47 | INFO     | Validating Step 2 output...
+2026-02-13 22:00:47 | INFO     | Validating Step 3 output...
+2026-02-13 22:00:47 | INFO     | Validating Step 4 output...
+2026-02-13 22:00:47 | INFO     | Validating context images...
+2026-02-13 22:00:47 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 22:00:47 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 22:00:47 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 22:02:13 | INFO     | {'stage': 'stage4', 'duration_sec': 75.38, 'tokens': 257, 'ram_pre_mb': 10286.36, 'ram_post_mb': 10335.52, 'gpu_pre': {'allocated_mb': 6053.07, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6164.0, 'total_mb': 8150.56}}
+2026-02-13 22:03:30 | INFO     | {'stage': 'stage4', 'duration_sec': 76.81, 'tokens': 261, 'ram_pre_mb': 10457.64, 'ram_post_mb': 10519.06, 'gpu_pre': {'allocated_mb': 6071.46, 'reserved_mb': 6164.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6072.47, 'reserved_mb': 6250.0, 'total_mb': 8150.56}}
+2026-02-13 22:06:18 | INFO     | {'stage': 'stage4', 'duration_sec': 167.32, 'tokens': 511, 'ram_pre_mb': 10520.43, 'ram_post_mb': 10491.0, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6250.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6224.0, 'total_mb': 8150.56}}
+2026-02-13 22:09:32 | INFO     | {'stage': 'stage4', 'duration_sec': 194.5, 'tokens': 553, 'ram_pre_mb': 10492.61, 'ram_post_mb': 10491.0, 'gpu_pre': {'allocated_mb': 6054.09, 'reserved_mb': 6224.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.1, 'reserved_mb': 6240.0, 'total_mb': 8150.56}}
+2026-02-13 22:09:48 | INFO     | {'stage': 'stage4', 'duration_sec': 15.79, 'tokens': 45, 'ram_pre_mb': 10491.03, 'ram_post_mb': 10491.13, 'gpu_pre': {'allocated_mb': 6054.07, 'reserved_mb': 6240.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.07, 'reserved_mb': 6080.0, 'total_mb': 8150.56}}
+2026-02-13 22:10:13 | INFO     | {'stage': 'stage4', 'duration_sec': 25.2, 'tokens': 73, 'ram_pre_mb': 10491.77, 'ram_post_mb': 10491.18, 'gpu_pre': {'allocated_mb': 6054.07, 'reserved_mb': 6080.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.07, 'reserved_mb': 6084.0, 'total_mb': 8150.56}}
+2026-02-13 22:10:13 | ERROR    | Module 2 failed.
+2026-02-13 22:10:13 | ERROR    | Missing ROI reference in output: entorhinal_cortex
+2026-02-13 22:10:13 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 211, in run_module2
+    step6_result = run_multistage_reasoning(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 279, in run_multistage_reasoning
+    final_output = _execute_with_retry(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 173, in _execute_with_retry
+    _check_all_rois_present(response)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 104, in _check_all_rois_present
+    raise ValueError(f"Missing ROI reference in output: {roi}")
+ValueError: Missing ROI reference in output: entorhinal_cortex
+
+2026-02-13 22:43:16 | INFO     | ========================================
+2026-02-13 22:43:16 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 22:43:16 | INFO     | ========================================
+2026-02-13 22:43:16 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 22:43:16 | INFO     | Loading subject (T0)...
+2026-02-13 22:43:16 | INFO     | Loading MNI template...
+2026-02-13 22:43:16 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 22:43:34 | INFO     | Registration completed in 0.29 minutes
+2026-02-13 22:43:34 | INFO     | Saving transforms...
+2026-02-13 22:43:34 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 22:43:34 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 22:43:34 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 22:43:34 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 22:43:34 | INFO     | Warping cortical atlas...
+2026-02-13 22:43:34 | INFO     | Warping subcortical atlas...
+2026-02-13 22:43:34 | INFO     | Atlas registration complete.
+2026-02-13 22:43:34 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 22:43:34 | INFO     | Loading Jacobian map...
+2026-02-13 22:43:35 | INFO     | Loading warped cortical atlas...
+2026-02-13 22:43:35 | INFO     | Loading warped subcortical atlas...
+2026-02-13 22:43:35 | INFO     | Loading ROI configuration...
+2026-02-13 22:43:35 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 22:43:35 | INFO     | hippocampus: -1.460%/year | Voxels=7918
+2026-02-13 22:43:35 | INFO     | entorhinal_cortex: -5.666%/year | Voxels=7461
+2026-02-13 22:43:35 | INFO     | temporal_lobe: -1.544%/year | Voxels=117334
+2026-02-13 22:43:35 | INFO     | parietal_lobe: -0.427%/year | Voxels=58818
+2026-02-13 22:43:35 | INFO     | ventricles: 0.640%/year | Voxels=14067
+2026-02-13 22:43:35 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 22:43:35 | INFO     | Loading normative reference data...
+2026-02-13 22:43:35 | INFO     | hippocampus: Z=-0.325
+2026-02-13 22:43:35 | INFO     | entorhinal_cortex: Z=-3.888
+2026-02-13 22:43:35 | INFO     | temporal_lobe: Z=-1.063
+2026-02-13 22:43:35 | INFO     | parietal_lobe: Z=0.289
+2026-02-13 22:43:35 | INFO     | ventricles: Z=-0.860
+2026-02-13 22:43:35 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 22:43:35 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 22:43:35 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 22:43:35 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 22:43:35 | INFO     | Validating Step 2 output...
+2026-02-13 22:43:35 | INFO     | Validating Step 3 output...
+2026-02-13 22:43:35 | INFO     | Validating Step 4 output...
+2026-02-13 22:43:35 | INFO     | Validating context images...
+2026-02-13 22:43:35 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 22:43:35 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 22:43:35 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 22:45:17 | INFO     | {'stage': 'stage1', 'duration_sec': 80.34, 'tokens': 236, 'ram_pre_mb': 10281.2, 'ram_post_mb': 10331.08, 'gpu_pre': {'allocated_mb': 6053.08, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6166.0, 'total_mb': 8150.56}}
+2026-02-13 22:47:16 | INFO     | {'stage': 'stage2', 'duration_sec': 118.63, 'tokens': 344, 'ram_pre_mb': 10452.95, 'ram_post_mb': 10492.0, 'gpu_pre': {'allocated_mb': 6071.46, 'reserved_mb': 6166.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6072.47, 'reserved_mb': 6244.0, 'total_mb': 8150.56}}
+2026-02-13 22:48:36 | INFO     | {'stage': 'stage3', 'duration_sec': 80.68, 'tokens': 236, 'ram_pre_mb': 10493.34, 'ram_post_mb': 10493.43, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6244.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6226.0, 'total_mb': 8150.56}}
+2026-02-13 22:51:33 | INFO     | {'stage': 'stage4', 'duration_sec': 176.27, 'tokens': 530, 'ram_pre_mb': 10494.59, 'ram_post_mb': 10492.4, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6226.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6218.0, 'total_mb': 8150.56}}
+2026-02-13 22:54:09 | INFO     | {'stage': 'stage4', 'duration_sec': 156.87, 'tokens': 497, 'ram_pre_mb': 10493.73, 'ram_post_mb': 10492.36, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6218.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6226.0, 'total_mb': 8150.56}}
+2026-02-13 22:56:47 | INFO     | {'stage': 'stage4', 'duration_sec': 157.05, 'tokens': 497, 'ram_pre_mb': 10493.62, 'ram_post_mb': 10492.32, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6226.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6226.0, 'total_mb': 8150.56}}
+2026-02-13 22:56:47 | ERROR    | Module 2 failed.
+2026-02-13 22:56:47 | ERROR    | Unauthorized numeric value detected: 2
+2026-02-13 22:56:47 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 211, in run_module2
+    step6_result = run_multistage_reasoning(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 234, in run_multistage_reasoning
+    final_output = _execute_with_retry(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 159, in _execute_with_retry
+    _check_numeric_integrity(response, payload)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 96, in _check_numeric_integrity
+    raise ValueError(f"Unauthorized numeric value detected: {number}")
+ValueError: Unauthorized numeric value detected: 2
+
+2026-02-13 23:00:47 | INFO     | ========================================
+2026-02-13 23:00:47 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-13 23:00:47 | INFO     | ========================================
+2026-02-13 23:00:47 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-13 23:00:47 | INFO     | Loading subject (T0)...
+2026-02-13 23:00:47 | INFO     | Loading MNI template...
+2026-02-13 23:00:48 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-13 23:01:04 | INFO     | Registration completed in 0.27 minutes
+2026-02-13 23:01:04 | INFO     | Saving transforms...
+2026-02-13 23:01:04 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-13 23:01:04 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-13 23:01:04 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-13 23:01:04 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-13 23:01:04 | INFO     | Warping cortical atlas...
+2026-02-13 23:01:04 | INFO     | Warping subcortical atlas...
+2026-02-13 23:01:04 | INFO     | Atlas registration complete.
+2026-02-13 23:01:04 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-13 23:01:04 | INFO     | Loading Jacobian map...
+2026-02-13 23:01:05 | INFO     | Loading warped cortical atlas...
+2026-02-13 23:01:05 | INFO     | Loading warped subcortical atlas...
+2026-02-13 23:01:05 | INFO     | Loading ROI configuration...
+2026-02-13 23:01:05 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-13 23:01:05 | INFO     | hippocampus: -1.481%/year | Voxels=7946
+2026-02-13 23:01:05 | INFO     | entorhinal_cortex: -5.643%/year | Voxels=7493
+2026-02-13 23:01:05 | INFO     | temporal_lobe: -1.558%/year | Voxels=117275
+2026-02-13 23:01:05 | INFO     | parietal_lobe: -0.439%/year | Voxels=58699
+2026-02-13 23:01:05 | INFO     | ventricles: 0.637%/year | Voxels=14024
+2026-02-13 23:01:05 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-13 23:01:05 | INFO     | Loading normative reference data...
+2026-02-13 23:01:05 | INFO     | hippocampus: Z=-0.351
+2026-02-13 23:01:05 | INFO     | entorhinal_cortex: Z=-3.870
+2026-02-13 23:01:05 | INFO     | temporal_lobe: Z=-1.083
+2026-02-13 23:01:05 | INFO     | parietal_lobe: Z=0.269
+2026-02-13 23:01:05 | INFO     | ventricles: Z=-0.863
+2026-02-13 23:01:05 | INFO     | STEP 4 — Classifying Progression
+2026-02-13 23:01:05 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-13 23:01:05 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-13 23:01:05 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-13 23:01:05 | INFO     | Validating Step 2 output...
+2026-02-13 23:01:05 | INFO     | Validating Step 3 output...
+2026-02-13 23:01:05 | INFO     | Validating Step 4 output...
+2026-02-13 23:01:05 | INFO     | Validating context images...
+2026-02-13 23:01:05 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-13 23:01:05 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-13 23:01:05 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-13 23:03:19 | INFO     | {'stage': 'stage1', 'duration_sec': 121.61, 'tokens': 272, 'ram_pre_mb': 10301.03, 'ram_post_mb': 2246.06, 'gpu_pre': {'allocated_mb': 6053.08, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6166.0, 'total_mb': 8150.56}}
+2026-02-13 23:04:32 | INFO     | {'stage': 'stage1', 'duration_sec': 71.99, 'tokens': 199, 'ram_pre_mb': 2259.24, 'ram_post_mb': 2265.59, 'gpu_pre': {'allocated_mb': 6053.08, 'reserved_mb': 6166.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6184.0, 'total_mb': 8150.56}}
+2026-02-13 23:06:14 | INFO     | {'stage': 'stage2', 'duration_sec': 102.15, 'tokens': 268, 'ram_pre_mb': 2367.89, 'ram_post_mb': 2457.07, 'gpu_pre': {'allocated_mb': 6071.46, 'reserved_mb': 6184.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6072.47, 'reserved_mb': 6242.0, 'total_mb': 8150.56}}
+2026-02-13 23:07:25 | INFO     | {'stage': 'stage3', 'duration_sec': 70.95, 'tokens': 199, 'ram_pre_mb': 2459.69, 'ram_post_mb': 2459.59, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6242.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6224.0, 'total_mb': 8150.56}}
+2026-02-13 23:10:08 | INFO     | {'stage': 'stage4', 'duration_sec': 163.26, 'tokens': 439, 'ram_pre_mb': 2461.43, 'ram_post_mb': 2305.05, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6224.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6226.0, 'total_mb': 8150.56}}
+2026-02-13 23:10:08 | INFO     | Module 2 completed successfully.
+2026-02-13 23:10:08 | INFO     | ========================================
+2026-02-14 07:15:19 | INFO     | ========================================
+2026-02-14 07:15:19 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-14 07:15:19 | INFO     | ========================================
+2026-02-14 07:15:19 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-14 07:15:19 | INFO     | Loading subject (T0)...
+2026-02-14 07:15:20 | INFO     | Loading MNI template...
+2026-02-14 07:15:20 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-14 07:15:42 | INFO     | Registration completed in 0.37 minutes
+2026-02-14 07:15:42 | INFO     | Saving transforms...
+2026-02-14 07:15:42 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-14 07:15:42 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-14 07:15:42 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-14 07:15:42 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-14 07:15:42 | INFO     | Warping cortical atlas...
+2026-02-14 07:15:42 | INFO     | Warping subcortical atlas...
+2026-02-14 07:15:43 | INFO     | Atlas registration complete.
+2026-02-14 07:15:43 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-14 07:15:43 | INFO     | Loading Jacobian map...
+2026-02-14 07:15:43 | INFO     | Loading warped cortical atlas...
+2026-02-14 07:15:43 | INFO     | Loading warped subcortical atlas...
+2026-02-14 07:15:43 | INFO     | Loading ROI configuration...
+2026-02-14 07:15:43 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-14 07:15:43 | INFO     | hippocampus: -1.456%/year | Voxels=7872
+2026-02-14 07:15:43 | INFO     | entorhinal_cortex: -5.589%/year | Voxels=7525
+2026-02-14 07:15:43 | INFO     | temporal_lobe: -1.551%/year | Voxels=118012
+2026-02-14 07:15:43 | INFO     | parietal_lobe: -0.449%/year | Voxels=58548
+2026-02-14 07:15:43 | INFO     | ventricles: 0.627%/year | Voxels=14002
+2026-02-14 07:15:43 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-14 07:15:43 | INFO     | Loading normative reference data...
+2026-02-14 07:15:43 | INFO     | hippocampus: Z=-0.320
+2026-02-14 07:15:43 | INFO     | entorhinal_cortex: Z=-3.824
+2026-02-14 07:15:43 | INFO     | temporal_lobe: Z=-1.073
+2026-02-14 07:15:43 | INFO     | parietal_lobe: Z=0.252
+2026-02-14 07:15:43 | INFO     | ventricles: Z=-0.873
+2026-02-14 07:15:43 | INFO     | STEP 4 — Classifying Progression
+2026-02-14 07:15:43 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-14 07:15:43 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-14 07:15:44 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-14 07:15:44 | INFO     | Validating Step 2 output...
+2026-02-14 07:15:44 | INFO     | Validating Step 3 output...
+2026-02-14 07:15:44 | INFO     | Validating Step 4 output...
+2026-02-14 07:15:44 | INFO     | Validating context images...
+2026-02-14 07:15:44 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-14 07:15:44 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-14 07:15:44 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-14 07:17:40 | INFO     | {'stage': 'stage1', 'duration_sec': 93.12, 'tokens': 261, 'ram_pre_mb': 10280.22, 'ram_post_mb': 10330.27, 'gpu_pre': {'allocated_mb': 6053.08, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6166.0, 'total_mb': 8150.56}}
+2026-02-14 07:19:25 | INFO     | {'stage': 'stage2', 'duration_sec': 105.02, 'tokens': 305, 'ram_pre_mb': 10451.65, 'ram_post_mb': 10518.04, 'gpu_pre': {'allocated_mb': 6071.46, 'reserved_mb': 6166.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6072.47, 'reserved_mb': 6246.0, 'total_mb': 8150.56}}
+2026-02-14 07:20:55 | INFO     | {'stage': 'stage3', 'duration_sec': 89.22, 'tokens': 261, 'ram_pre_mb': 10519.35, 'ram_post_mb': 10490.18, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6246.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6234.0, 'total_mb': 8150.56}}
+2026-02-14 07:23:32 | INFO     | {'stage': 'stage4', 'duration_sec': 157.79, 'tokens': 465, 'ram_pre_mb': 10491.2, 'ram_post_mb': 10489.67, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6234.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6224.0, 'total_mb': 8150.56}}
+2026-02-14 07:23:32 | INFO     | Module 2 completed successfully.
+2026-02-14 07:23:32 | INFO     | ========================================
+2026-02-14 07:44:57 | INFO     | ========================================
+2026-02-14 07:44:57 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-14 07:44:57 | INFO     | ========================================
+2026-02-14 07:44:57 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-14 07:44:57 | INFO     | Loading subject (T0)...
+2026-02-14 07:44:57 | INFO     | Loading MNI template...
+2026-02-14 07:44:57 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-14 07:45:20 | INFO     | Registration completed in 0.38 minutes
+2026-02-14 07:45:20 | INFO     | Saving transforms...
+2026-02-14 07:45:20 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-14 07:45:20 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-14 07:45:20 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-14 07:45:20 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-14 07:45:20 | INFO     | Warping cortical atlas...
+2026-02-14 07:45:20 | INFO     | Warping subcortical atlas...
+2026-02-14 07:45:21 | INFO     | Atlas registration complete.
+2026-02-14 07:45:21 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-14 07:45:21 | INFO     | Loading Jacobian map...
+2026-02-14 07:45:21 | INFO     | Loading warped cortical atlas...
+2026-02-14 07:45:21 | INFO     | Loading warped subcortical atlas...
+2026-02-14 07:45:21 | INFO     | Loading ROI configuration...
+2026-02-14 07:45:21 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-14 07:45:21 | INFO     | hippocampus: -1.439%/year | Voxels=7935
+2026-02-14 07:45:21 | INFO     | entorhinal_cortex: -5.595%/year | Voxels=7479
+2026-02-14 07:45:21 | INFO     | temporal_lobe: -1.566%/year | Voxels=117340
+2026-02-14 07:45:21 | INFO     | parietal_lobe: -0.442%/year | Voxels=58613
+2026-02-14 07:45:21 | INFO     | ventricles: 0.670%/year | Voxels=14098
+2026-02-14 07:45:21 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-14 07:45:21 | INFO     | Loading normative reference data...
+2026-02-14 07:45:21 | INFO     | hippocampus: Z=-0.299
+2026-02-14 07:45:21 | INFO     | entorhinal_cortex: Z=-3.829
+2026-02-14 07:45:21 | INFO     | temporal_lobe: Z=-1.094
+2026-02-14 07:45:21 | INFO     | parietal_lobe: Z=0.263
+2026-02-14 07:45:21 | INFO     | ventricles: Z=-0.830
+2026-02-14 07:45:21 | INFO     | STEP 4 — Classifying Progression
+2026-02-14 07:45:21 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-14 07:45:21 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-14 07:45:21 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-14 07:45:21 | INFO     | Validating Step 2 output...
+2026-02-14 07:45:21 | INFO     | Validating Step 3 output...
+2026-02-14 07:45:21 | INFO     | Validating Step 4 output...
+2026-02-14 07:45:21 | INFO     | Validating context images...
+2026-02-14 07:45:21 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-14 07:45:21 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-14 07:45:21 | INFO     | Initializing Global MedGemma Client (Singleton)...
+2026-02-14 07:45:21 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-14 07:46:58 | INFO     | {'stage': 'stage1', 'duration_sec': 85.24, 'tokens': 280, 'ram_pre_mb': 10333.74, 'ram_post_mb': 10383.05, 'gpu_pre': {'allocated_mb': 6053.08, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6186.0, 'total_mb': 8150.56}}
+2026-02-14 07:48:51 | INFO     | {'stage': 'stage2', 'duration_sec': 112.95, 'tokens': 399, 'ram_pre_mb': 10505.03, 'ram_post_mb': 10544.95, 'gpu_pre': {'allocated_mb': 6071.46, 'reserved_mb': 6186.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6072.48, 'reserved_mb': 6274.0, 'total_mb': 8150.56}}
+2026-02-14 07:50:13 | INFO     | {'stage': 'stage3', 'duration_sec': 82.14, 'tokens': 280, 'ram_pre_mb': 10546.12, 'ram_post_mb': 10544.71, 'gpu_pre': {'allocated_mb': 6054.09, 'reserved_mb': 6274.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.1, 'reserved_mb': 6218.0, 'total_mb': 8150.56}}
+2026-02-14 07:52:35 | INFO     | {'stage': 'stage4', 'duration_sec': 141.67, 'tokens': 485, 'ram_pre_mb': 10545.79, 'ram_post_mb': 10544.56, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6218.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6226.0, 'total_mb': 8150.56}}
+2026-02-14 07:55:10 | INFO     | {'stage': 'stage4', 'duration_sec': 155.11, 'tokens': 526, 'ram_pre_mb': 10545.69, 'ram_post_mb': 10544.71, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6226.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6236.0, 'total_mb': 8150.56}}
+2026-02-14 07:57:44 | INFO     | {'stage': 'stage4', 'duration_sec': 154.06, 'tokens': 526, 'ram_pre_mb': 10545.81, 'ram_post_mb': 10544.35, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6236.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6236.0, 'total_mb': 8150.56}}
+2026-02-14 07:57:44 | ERROR    | Module 2 failed.
+2026-02-14 07:57:44 | ERROR    | Unauthorized numeric value detected: -1.5
+2026-02-14 07:57:44 | ERROR    | Traceback (most recent call last):
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\Module2_orchestrator.py", line 218, in run_module2
+    step6_result = run_multistage_reasoning(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 288, in run_multistage_reasoning
+    final_output = _execute_with_retry(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 193, in _execute_with_retry
+    _check_numeric_integrity(response, payload)
+  File "C:\Users\gunas_ybbhfcb\Downloads\Projects\Hack\Modules\Module2\reasoning_engine.py", line 128, in _check_numeric_integrity
+    raise ValueError(f"Unauthorized numeric value detected: {num}")
+ValueError: Unauthorized numeric value detected: -1.5
+
+2026-02-14 11:05:22 | INFO     | ========================================
+2026-02-14 11:05:22 | INFO     | Starting Module 2 — Quantitative Engine
+2026-02-14 11:05:22 | INFO     | ========================================
+2026-02-14 11:05:22 | INFO     | STEP 1 — Registering Atlas to Subject
+2026-02-14 11:05:22 | INFO     | Loading subject (T0)...
+2026-02-14 11:05:22 | INFO     | Loading MNI template...
+2026-02-14 11:05:22 | INFO     | Running antsRegistrationSyNQuick[s] (MNI -> Subject)...
+2026-02-14 11:05:44 | INFO     | Registration completed in 0.36 minutes
+2026-02-14 11:05:44 | INFO     | Saving transforms...
+2026-02-14 11:05:44 | INFO     | Saved forward transform: mni_to_subject_fwd_0.nii.gz
+2026-02-14 11:05:44 | INFO     | Saved forward transform: mni_to_subject_fwd_1.mat
+2026-02-14 11:05:44 | INFO     | Saved inverse transform: subject_to_mni_inv_0.mat
+2026-02-14 11:05:44 | INFO     | Saved inverse transform: subject_to_mni_inv_1.nii.gz
+2026-02-14 11:05:44 | INFO     | Warping cortical atlas...
+2026-02-14 11:05:45 | INFO     | Warping subcortical atlas...
+2026-02-14 11:05:45 | INFO     | Atlas registration complete.
+2026-02-14 11:05:45 | INFO     | STEP 2 — Computing ROI Metrics
+2026-02-14 11:05:45 | INFO     | Loading Jacobian map...
+2026-02-14 11:05:45 | INFO     | Loading warped cortical atlas...
+2026-02-14 11:05:45 | INFO     | Loading warped subcortical atlas...
+2026-02-14 11:05:45 | INFO     | Loading ROI configuration...
+2026-02-14 11:05:45 | INFO     | Validating ROI label exclusivity within each atlas...
+2026-02-14 11:05:45 | INFO     | hippocampus: -1.440%/year | Voxels=7921
+2026-02-14 11:05:45 | INFO     | entorhinal_cortex: -5.707%/year | Voxels=7443
+2026-02-14 11:05:45 | INFO     | temporal_lobe: -1.545%/year | Voxels=117786
+2026-02-14 11:05:45 | INFO     | parietal_lobe: -0.450%/year | Voxels=58890
+2026-02-14 11:05:45 | INFO     | ventricles: 0.634%/year | Voxels=14036
+2026-02-14 11:05:45 | INFO     | STEP 3 — Computing Z-Scores
+2026-02-14 11:05:45 | INFO     | Loading normative reference data...
+2026-02-14 11:05:45 | INFO     | hippocampus: Z=-0.299
+2026-02-14 11:05:45 | INFO     | entorhinal_cortex: Z=-3.923
+2026-02-14 11:05:45 | INFO     | temporal_lobe: Z=-1.064
+2026-02-14 11:05:45 | INFO     | parietal_lobe: Z=0.249
+2026-02-14 11:05:45 | INFO     | ventricles: Z=-0.866
+2026-02-14 11:05:45 | INFO     | STEP 4 — Classifying Progression
+2026-02-14 11:05:45 | INFO     | Final classification: Normal Progression | Score=1
+2026-02-14 11:05:45 | INFO     | STEP 5A — Exporting Deterministic T1 Axial Slice
+2026-02-14 11:05:46 | INFO     | STEP 5B — Building Intelligence Payload
+2026-02-14 11:05:46 | INFO     | Validating Step 2 output...
+2026-02-14 11:05:46 | INFO     | Validating Step 3 output...
+2026-02-14 11:05:46 | INFO     | Validating Step 4 output...
+2026-02-14 11:05:46 | INFO     | Validating context images...
+2026-02-14 11:05:46 | INFO     | Step 5 intelligence payload constructed successfully.
+2026-02-14 11:05:46 | INFO     | STEP 6 — Running MedGemma Multi-Stage Reasoning
+2026-02-14 11:05:46 | INFO     | Initializing Global MedGemma Client (Singleton)...
+2026-02-14 11:05:46 | INFO     | Loading MedGemma (4-bit NF4)...
+2026-02-14 11:07:09 | INFO     | {'stage': 'stage1', 'duration_sec': 69.78, 'tokens': 209, 'ram_pre_mb': 10281.94, 'ram_post_mb': 10331.4, 'gpu_pre': {'allocated_mb': 6053.08, 'reserved_mb': 6066.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6053.08, 'reserved_mb': 6194.0, 'total_mb': 8150.56}}
+2026-02-14 11:07:30 | INFO     | {'stage': 'stage2', 'duration_sec': 21.71, 'tokens': 72, 'ram_pre_mb': 10453.39, 'ram_post_mb': 10520.27, 'gpu_pre': {'allocated_mb': 6071.47, 'reserved_mb': 6194.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6072.48, 'reserved_mb': 6286.0, 'total_mb': 8150.56}}
+2026-02-14 11:08:50 | INFO     | {'stage': 'stage3', 'duration_sec': 79.44, 'tokens': 230, 'ram_pre_mb': 10521.23, 'ram_post_mb': 10493.7, 'gpu_pre': {'allocated_mb': 6054.08, 'reserved_mb': 6286.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.09, 'reserved_mb': 6200.0, 'total_mb': 8150.56}}
+2026-02-14 11:12:31 | INFO     | {'stage': 'stage4', 'duration_sec': 220.97, 'tokens': 650, 'ram_pre_mb': 10494.85, 'ram_post_mb': 10493.37, 'gpu_pre': {'allocated_mb': 6054.09, 'reserved_mb': 6200.0, 'total_mb': 8150.56}, 'gpu_post': {'allocated_mb': 6054.1, 'reserved_mb': 6246.0, 'total_mb': 8150.56}}
+2026-02-14 11:12:31 | INFO     | Module 2 completed successfully.
+2026-02-14 11:12:31 | INFO     | ========================================

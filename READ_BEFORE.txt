@@ -1,0 +1,41 @@
+start this server : 
+    uvicorn api:app --reload (This helps to fetch the local files in Next Js)
+
+To start the app:
+    cd neuro_metric> npm run dev (Dashboard Metric viewer)
+
+To test only the backend:
+    You must create a session directory with this layout:\
+        session_dir/
+                │
+                ├── input/
+                │   ├── T0.nii.gz     ← baseline MRI
+                │   └── T1.nii.gz     ← follow-up MRI
+                │
+                ├── module1/         ← created automatically
+                └── module2/         ← created automatically
+                
+    mkdir -p Data/sessions/session_001/input --paste the required T0 anfd T1
+
+Parameter	    Type	    Required	    Description
+session_dir	    Path        Yes             Root folder of the session
+age	            int     	Yes	            Patient age
+sex	            str	        Yes	            "M" or "F"
+interval_days	float	    Yes	            Days between T0 and T1 scan
+
+Note:
+
+Common Errors:
+Error
+FileNotFoundError: T0 or T1 image missing
+
+Ensure:
+session_dir/input/T0.nii.gz
+session_dir/input/T1.nii.gz
+
+You provide only:
+    session_dir/input/T0.nii.gz
+    session_dir/input/T1.nii.gz
+    age
+    sex
+    interval_days

@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "age": 62,
+        "sex": "M",
+        "interval_days": 517
+    },
+    "roi_metrics": {
+        "hippocampus": {
+            "mean_jacobian": 0.9820979866565972,
+            "percent_change_total": -1.79020133434028,
+            "percent_change_per_year": -1.2647408846572288,
+            "voxel_count": 4177
+        },
+        "ventricles": {
+            "mean_jacobian": 1.0023650182355843,
+            "percent_change_total": 0.23650182355843263,
+            "percent_change_per_year": 0.16708373511550778,
+            "voxel_count": 12478
+        }
+    },
+    "z_scores": {
+        "hippocampus": {
+            "annual_percent_change": -1.2647408846572288,
+            "z_score": -0.10790147442871471
+        },
+        "ventricles": {
+            "annual_percent_change": 0.16708373511550778,
+            "z_score": -1.6661453311056151
+        }
+    },
+    "classification": {
+        "progression_class": "Normal Progression",
+        "score": 0,
+        "rationale": []
+    }
+}

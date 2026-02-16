@@ -1,0 +1,37 @@
+{
+    "age": 62,
+    "age_bin": "60-70",
+    "interval_years": 1.4154688569472964,
+    "z_scores": {
+        "hippocampus": {
+            "annual_percent_change": -0.14467277864335987,
+            "normative_mean": -1.2,
+            "normative_std": 0.8,
+            "z_score": 1.3191590266958
+        },
+        "entorhinal_cortex": {
+            "annual_percent_change": -1.1005797377157756,
+            "normative_mean": -1.0,
+            "normative_std": 1.2,
+            "z_score": -0.08381644809647963
+        },
+        "temporal_lobe": {
+            "annual_percent_change": 0.02397541586987215,
+            "normative_mean": -0.8,
+            "normative_std": 0.7,
+            "z_score": 1.1771077369569605
+        },
+        "parietal_lobe": {
+            "annual_percent_change": -0.6836133034992798,
+            "normative_mean": -0.6,
+            "normative_std": 0.6,
+            "z_score": -0.13935550583213313
+        },
+        "ventricles": {
+            "annual_percent_change": 13.179899244482376,
+            "normative_mean": 1.5,
+            "normative_std": 1.0,
+            "z_score": 11.679899244482376
+        }
+    }
+}

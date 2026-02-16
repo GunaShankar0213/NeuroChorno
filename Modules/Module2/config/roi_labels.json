@@ -1,0 +1,30 @@
+{
+  "hippocampus": [9, 19],
+
+  "entorhinal_cortex": [34],
+
+  "temporal_lobe": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    37,
+    38,
+    39
+  ],
+
+  "parietal_lobe": [
+    18,
+    19,
+    20,
+    21,
+    43
+  ],
+
+  "ventricles": [3, 14]
+}

@@ -1,0 +1,35 @@
+{
+    "interval_years": 1.4154688569472964,
+    "roi_metrics": {
+        "hippocampus": {
+            "mean_jacobian": 0.9796238475120695,
+            "percent_change_total": -2.0376152487930455,
+            "percent_change_per_year": -1.4395337903707153,
+            "voxel_count": 7921
+        },
+        "entorhinal_cortex": {
+            "mean_jacobian": 0.9192187512303719,
+            "percent_change_total": -8.07812487696281,
+            "percent_change_per_year": -5.707031163076724,
+            "voxel_count": 7443
+        },
+        "temporal_lobe": {
+            "mean_jacobian": 0.9781315633809999,
+            "percent_change_total": -2.1868436619000065,
+            "percent_change_per_year": -1.5449606334796466,
+            "voxel_count": 117786
+        },
+        "parietal_lobe": {
+            "mean_jacobian": 0.9936239817912115,
+            "percent_change_total": -0.6376018208788525,
+            "percent_change_per_year": -0.45045273709091077,
+            "voxel_count": 58890
+        },
+        "ventricles": {
+            "mean_jacobian": 1.0089708073088572,
+            "percent_change_total": 0.8970807308857243,
+            "percent_change_per_year": 0.6337693171296147,
+            "voxel_count": 14036
+        }
+    }
+}
