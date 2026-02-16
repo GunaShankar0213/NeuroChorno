@@ -5,7 +5,7 @@ morphometry system that converts longitudinal MRI scans into explainable
 fast-progressor classifications for Alzheimer's clinical trial
 enrichment.
 
-View this [Project_Video]([https://www.google.com](https://drive.google.com/file/d/1n6hJoikn59r0rQjagH6NwOm5yufmgtcj/view?usp=sharing)
+View this : [Click this](https://drive.google.com/file/d/1TpV_rDFbbnlVLTzDZ6GkFZLwIjX6KxKj/view?usp=sharing)
 
 ------------------------------------------------------------------------
 
