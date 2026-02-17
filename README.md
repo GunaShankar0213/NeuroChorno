@@ -258,45 +258,26 @@ Guna Shankar S
 
 
 ------------------------------------------------------------------------
-# Citations
+# **Repository and Demo**
 
-## OASIS-3 Dataset
+**1. Code Repository:**
+[https://github.com/GunaShankar0213/NeuroChrono](https://github.com/GunaShankar0213/NeuroChrono)
+*Contains full source code, Docker setup, and local deployment instructions.*
 
-This project uses data from the Open Access Series of Imaging Studies (OASIS-3).
+**2. Official Competition Video (3 Minutes):**
+[Click Here](https://youtu.be/lUN9K0D0YUk)
+*Primary submission for judging. Covers the problem, solution, and agentic workflow.*
 
-If you use this dataset, please cite:
+**3. Technical Walk-through:**
+[Watch the Installation Guide (How to Run)](https://youtu.be/eGaEoGlfV1Q)
+*A deep-dive tutorial on how to run the system locally (Edge AI demo).*
 
-LaMontagne PJ, Benzinger TLS, Morris JC, Keefe S, Hornbeck R, Xiong C, Grant E, Hassenstab J, Moulder K, Vlassenko AG, Raichle ME, Cruchaga C, Marcus D.  
-OASIS-3: Longitudinal Neuroimaging, Clinical, and Cognitive Dataset for Normal Aging and Alzheimer Disease.  
-medRxiv. 2019.  
+**4. Document**:
+[View Full Technical Documentation](https://docs.google.com/document/d/14Dhkmi91LjvOYkAdQULhlfUFcpZf-zekH1kZWhhtvvc/edit?usp=sharing)
 
-Dataset link:  
-https://www.oasis-brains.org/
+### References & Scientific Basis
 
----
-
-## MedGemma and HAI-DEF Models
-
-This project uses MedGemma from Google Health AI Developer Foundations.
-
-Please cite:
-
-Mahvar F, Liu Y, Golden D, et al.  
-The MedGemma Impact Challenge. Kaggle. 2026.  
-https://kaggle.com/competitions/med-gemma-impact-challenge
-
----
-
-## ANTs Registration Framework
-
-This project uses ANTs for diffeomorphic registration.
-
-Please cite:
-
-Avants BB, Tustison NJ, Song G.  
-Advanced normalization tools (ANTs).  
-NeuroImage, 2011.  
-
-
-
-
+1.  **The ANTs "Gold Standard":** Avants, B. B., et al. (2008). *Symmetric diffeomorphic image registration with cross-correlation: evaluating automated labeling of elderly and neurodegenerative brain.* Medical Image Analysis.
+2.  **Alzheimer’s Biomarkers:** Jack, C. R., et al. (2010). *Hypothetical model of dynamic biomarkers of the Alzheimer's pathological cascade.* The Lancet Neurology.
+3. **Data Source (OASIS-3):** LaMontagne, P.J., et al. (2019). *OASIS-3: Longitudinal Neuroimaging, Clinical, and Cognitive Dataset for Normal Aging and Alzheimer Disease.
+4.  **Competition Citation:** Fereshteh Mahvar, Yun Liu, Daniel Golden, Fayaz Jamil, Sunny Jansen, Can Kirmizi, Rory Pilgrim, David F. Steiner, Andrew Sellergren, Richa Tiwari, Sunny Virmani, Liron Yatziv, Rebecca Hemenway, Yossi Matias, Ronit Levavi Morad, Avinatan Hassidim, Shravya Shetty, and María Cruz. The MedGemma Impact Challenge. https://kaggle.com/competitions/med-gemma-impact-challenge, 2026. Kaggle.
