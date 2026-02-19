@@ -1,0 +1,50 @@
+2026-01-29 21:59:16 | INFO     | ========== MODULE-1 START ==========
+2026-01-29 21:59:16 | INFO     | T0: Data\raw\simon_tier_A\T0.nii.gz
+2026-01-29 21:59:16 | INFO     | T1: Data\raw\simon_tier_A\T1.nii.gz
+2026-01-29 21:59:16 | INFO     | SkullStripper initialized | Backend=HD-BET | Mode=CPU-only (Blackwell-safe)
+2026-01-29 21:59:16 | INFO     | START: T0 SkullStrip
+2026-01-29 21:59:16 | INFO     | Starting HD-BET pipeline
+2026-01-29 21:59:16 | INFO     | Running HD-BET inference
+2026-01-29 22:00:23 | INFO     | HD-BET completed successfully
+2026-01-29 22:00:26 | INFO     | Starting affine-safe auto-cropping
+2026-01-29 22:00:26 | INFO     | Cropping complete | New shape: (145, 176, 151)
+2026-01-29 22:00:26 | INFO     | Final NIfTI saved: C:\Users\gunas_ybbhfcb\Downloads\Projects\Medgemma\Data\outputs\skull_strip\T0\T0_bet_cropped.nii.gz
+2026-01-29 22:00:26 | INFO     | Generating QC visualization
+2026-01-29 22:00:26 | INFO     | QC report saved: C:\Users\gunas_ybbhfcb\Downloads\Projects\Medgemma\Data\outputs\skull_strip\T0\T0_qc_report.png
+2026-01-29 22:00:26 | INFO     | Cleaning intermediate files
+2026-01-29 22:00:26 | INFO     | Intermediate cleanup complete
+2026-01-29 22:00:26 | INFO     | Skull stripping completed successfully
+2026-01-29 22:00:26 | INFO     | END: T0 SkullStrip | 70.28 sec
+2026-01-29 22:00:26 | INFO     | START: T0 BiasCorrection
+2026-01-29 22:01:29 | INFO     | END: T0 BiasCorrection | 63.09 sec
+2026-01-29 22:01:29 | INFO     | SkullStripper initialized | Backend=HD-BET | Mode=CPU-only (Blackwell-safe)
+2026-01-29 22:01:29 | INFO     | START: T1 SkullStrip
+2026-01-29 22:01:29 | INFO     | Starting HD-BET pipeline
+2026-01-29 22:01:29 | INFO     | Running HD-BET inference
+2026-01-29 22:02:37 | INFO     | HD-BET completed successfully
+2026-01-29 22:02:40 | INFO     | Starting affine-safe auto-cropping
+2026-01-29 22:02:40 | INFO     | Cropping complete | New shape: (145, 180, 148)
+2026-01-29 22:02:40 | INFO     | Final NIfTI saved: C:\Users\gunas_ybbhfcb\Downloads\Projects\Medgemma\Data\outputs\skull_strip\T1\T1_bet_cropped.nii.gz
+2026-01-29 22:02:40 | INFO     | Generating QC visualization
+2026-01-29 22:02:41 | INFO     | QC report saved: C:\Users\gunas_ybbhfcb\Downloads\Projects\Medgemma\Data\outputs\skull_strip\T1\T1_qc_report.png
+2026-01-29 22:02:41 | INFO     | Cleaning intermediate files
+2026-01-29 22:02:41 | INFO     | Intermediate cleanup complete
+2026-01-29 22:02:41 | INFO     | Skull stripping completed successfully
+2026-01-29 22:02:41 | INFO     | END: T1 SkullStrip | 71.36 sec
+2026-01-29 22:02:41 | INFO     | START: T1 BiasCorrection
+2026-01-29 22:03:40 | INFO     | END: T1 BiasCorrection | 59.67 sec
+2026-01-29 22:03:40 | INFO     | START: AffineRegistration
+2026-01-29 22:03:42 | INFO     | END: AffineRegistration | 1.31 sec
+2026-01-29 22:03:42 | INFO     | START: DLRegistration
+2026-01-29 22:03:50 | INFO     | END: DLRegistration | 7.98 sec
+2026-01-29 22:03:50 | INFO     | START: DeformationQA
+2026-01-29 22:03:50 | INFO     | END: DeformationQA | 0.80 sec
+2026-01-29 22:03:50 | INFO     | {'max_displacement': 7.054327964782715, 'mean_displacement': 1.9687613248825073, 'ncc_similarity': 0.9876299645398302, 'smoothness': 0.1640746295452118, 'accepted': True}
+2026-01-29 22:03:50 | INFO     | START: FlowToNifti
+2026-01-29 22:03:53 | INFO     | END: FlowToNifti | 2.72 sec
+2026-01-29 22:03:53 | INFO     | START: Jacobian
+2026-01-29 22:03:55 | INFO     | END: Jacobian | 2.28 sec
+2026-01-29 22:03:55 | INFO     | START: Visualization
+2026-01-29 22:03:56 | INFO     | END: Visualization | 0.40 sec
+2026-01-29 22:03:56 | INFO     | TOTAL RUNTIME: 4.67 minutes
+2026-01-29 22:03:56 | INFO     | ========== MODULE-1 COMPLETE ==========
